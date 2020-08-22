@@ -24,8 +24,8 @@ function Home(props) {
     <Container className="signup">
       <Row>
         <Col className="intro" md={{ span: 8, offset: 2 }}>
-          <h1>Welcome to UNH Life Insurance</h1>
-          <img src={family} alt="This a family image" />
+          <h1 style={{ color: 'white' }}>Welcome to East Coast Life Insurance</h1>
+          <img src={family} alt="This a family" />
           <br></br>
           {isAuth ? (
             <>
@@ -71,15 +71,7 @@ function Home(props) {
               </Button>
               </>
             )}
-          <Button
-            className="m-1"
-            onClick={e => {
-              e.preventDefault();
-              getSecret();
-            }}
-          >
-            Show Secrets
-          </Button>
+
         </Col>
       </Row>
       <Row>

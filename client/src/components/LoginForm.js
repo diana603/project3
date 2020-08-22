@@ -58,14 +58,14 @@ const LoginForm = props => {
             <Button className='m-1' variant="primary" type="submit">
                 Submit
             </Button>
-            <Button className='m-1' onClick={e => {
+            {/* <Button className='m-1' onClick={e => {
                 e.preventDefault();
                 props.history.push('/signup')
             }}>Signup</Button>
             <Button className='m-1' onClick={e => {
                 e.preventDefault();
                 props.history.push('/')
-            }}>Home</Button>
+            }}>Home</Button> */}
         </Form>
     )
 }
