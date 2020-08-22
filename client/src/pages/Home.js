@@ -3,9 +3,11 @@ import { AuthContext } from "../AuthContext";
 import "../App.css";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import Axios from "axios";
+import family from "./images/family.jpg"
+
 
 function Home(props) {
-  
+
   const { isAuth, logout } = useContext(AuthContext);
 
   const [secret, setSecret] = useState("");
@@ -21,8 +23,10 @@ function Home(props) {
   return (
     <Container className="signup">
       <Row>
-        <Col md={{ span: 8, offset: 2 }}>
-          <h1>Home Page</h1>
+        <Col className="intro" md={{ span: 8, offset: 2 }}>
+          <h1>Welcome to UNH Life Insurance</h1>
+          <img src={family} alt="This a family image" />
+          <br></br>
           {isAuth ? (
             <>
               <Button
@@ -46,27 +50,27 @@ function Home(props) {
               </Button>
             </>
           ) : (
-            <>
-              <Button
-                className="m-1"
-                onClick={e => {
-                  e.preventDefault();
-                  props.history.push("/login");
-                }}
-              >
-                Login
+              <>
+                <Button
+                  className="m-1"
+                  onClick={e => {
+                    e.preventDefault();
+                    props.history.push("/login");
+                  }}
+                >
+                  Login
               </Button>
-              <Button
-                className="m-1"
-                onClick={e => {
-                  e.preventDefault();
-                  props.history.push("/signup");
-                }}
-              >
-                Signup
+                <Button
+                  className="m-1"
+                  onClick={e => {
+                    e.preventDefault();
+                    props.history.push("/signup");
+                  }}
+                >
+                  Signup
               </Button>
-            </>
-          )}
+              </>
+            )}
           <Button
             className="m-1"
             onClick={e => {
