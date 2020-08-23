@@ -30,6 +30,7 @@ const Signup = props => {
         let newUser = {
             firstName: formData.firstNameInput,
             lastName: formData.lastNameInput,
+            policyNumber: formData.policyNumber,
             email: formData.emailInput,
             password: formData.passwordInput
         }
@@ -87,6 +88,10 @@ const Signup = props => {
 
     return (
         <Form onSubmit={handleFormSubmit}>
+            <Form.Group controlId="inputPolicyNumber">
+                <Form.Label className={emailColor}>Policy Number</Form.Label>
+                <Form.Control name="policyNumberInput" type="text" placeholder="" value={formData.policyNumber} onChange={handleInputChange} />
+            </Form.Group>
             <Form.Group controlId="inputFirstName">
                 <Form.Label className={firstNameColor}>FirstName</Form.Label>
                 <Form.Control name="firstNameInput" type="text" placeholder="" value={formData.firstNameInput} onChange={handleInputChange} />
@@ -111,13 +116,13 @@ const Signup = props => {
                     {credsAreInvalid}
                 </Form.Text>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button className='m-1' variant="primary" type="submit">
                 Submit
             </Button>
-            <Button className='m-1' onClick={e => {
+            {/* <Button className='m-1' onClick={e => {
                 e.preventDefault();
                 props.history.push('/')
-            }}>Home</Button>
+            }}>Home</Button> */}
         </Form>
     )
 }

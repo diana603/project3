@@ -15,6 +15,7 @@ router.post('/login', passport.authenticate('local'), (req, res) => {
 // Sequelize User Model. If the user is created successfully, proceed
 //  to log the user in, otherwise send back an error
 router.post('/signup', (req, res) => {
+  // validate policy
   db.User.create({
     firstName: req.body.firstName,
     lastName: req.body.lastName,
