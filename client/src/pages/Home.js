@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../AuthContext";
 import "../App.css";
-import { Container, Row, Button, Col } from "react-bootstrap";
+import { Container, Row, Button, Col, Jumbotron } from "react-bootstrap";
 import Axios from "axios";
 import family from "./images/family.jpg"
 
@@ -21,11 +21,12 @@ function Home(props) {
   };
 
   return (
+<Jumbotron className="LoginJumbotron" fluid >
+    <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
     <Container className="signup">
       <Row>
         <Col className="intro" md={{ span: 8, offset: 2 }}>
-          <h1>Welcome to UNH Life Insurance</h1>
-          <img src={family} alt="This a family image" />
+          <img src={family} alt="This a family" />
           <br></br>
           {isAuth ? (
             <>
@@ -71,15 +72,7 @@ function Home(props) {
               </Button>
               </>
             )}
-          <Button
-            className="m-1"
-            onClick={e => {
-              e.preventDefault();
-              getSecret();
-            }}
-          >
-            Show Secrets
-          </Button>
+
         </Col>
       </Row>
       <Row>
@@ -88,6 +81,7 @@ function Home(props) {
         </Col>
       </Row>
     </Container>
+    </Jumbotron>
   );
 }
 

@@ -2,16 +2,22 @@
   padding-top: 100px;
 }
 
-body {
-  background-color: #007BFF ;
+.LoginJumbotron {
+  background-color: #007BFF !important ;
 }
 
 .m-1 {
-  background-color: black;
+  background-color: black !important;
 }
 
 .intro {
   text-align: center;
   font-family: 'Alata', sans-serif;
   font-size-adjust: initial;
+  text-decoration-color: white;
+}
+
+.insurance {
+  text-align: center;
+  color: white; 
 }

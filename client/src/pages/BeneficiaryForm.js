@@ -9,13 +9,13 @@ const BeneficiaryForm = () => {
         <Form>
             <Form.Row>
                 <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Label>Policy Number </Form.Label>
+                <Form.Control type="Policy Number " placeholder="Enter Policy Number" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Label>First and Last Name </Form.Label>
+                <Form.Control type="Name" placeholder="Enter Name" />
                 </Form.Group>
             </Form.Row>
 
