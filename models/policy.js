@@ -22,10 +22,14 @@ module.exports = function (sequelize, DataTypes) {
       unique: false,
     },
     beneficiaries: {
-
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false,
     },
     amount: {
-
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: false,
     },
 
   });
