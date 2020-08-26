@@ -4,7 +4,7 @@ import "../App.css";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import Axios from "axios";
 import family from "./images/family.jpg"
-
+// import { Footer } from "react-bootstrap/lib/Modal";
 
 function Home(props) {
 
@@ -24,7 +24,7 @@ function Home(props) {
     <Container className="signup">
       <Row>
         <Col className="intro" md={{ span: 8, offset: 2 }}>
-          <h1 style={{ color: 'white' }}>Welcome to East Coast Life Insurance</h1>
+          <h1 className="pageHeader" style={{ color: 'white' }}>Welcome to East Coast Life Insurance</h1>
           <img src={family} alt="This a family" />
           <br></br>
           {isAuth ? (
@@ -79,6 +79,7 @@ function Home(props) {
           <h1>{secret}</h1>
         </Col>
       </Row>
+      {/* <Footer>Copyright 2020</Footer> */}
     </Container>
   );
 }

@@ -1,9 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-const logger = require('morgan');
 const passport = require('passport');
-const bodyParser = require('body-parser');
 const db = require('./models');
 const routes = require('./routes');
 
@@ -15,9 +13,8 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Express boilerplate middleware
 // =============================================
-app.use(logger('dev'));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Express session middleware
 // =============================================

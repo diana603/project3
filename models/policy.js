@@ -27,7 +27,7 @@ module.exports = function (sequelize, DataTypes) {
       unique: false,
     },
     amount: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       unique: false,
     },
