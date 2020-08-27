@@ -61,6 +61,13 @@ const BeneficiaryForm = () => {
          <Form.Control />
         </Form.Group>
         </Form.Row>
+
+        <div>
+            <p>
+                Beneficiary Designations 
+                c                                                                                                                                                            
+            </p>
+        </div>
         {/* to create paragraph use div then indent with p tag */}
         <div className="beneBtn">
             <Button className="gobackBtn" variant="primary" type="submit">
