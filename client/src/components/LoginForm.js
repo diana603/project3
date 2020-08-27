@@ -1,73 +1,78 @@
-import React, { useState, useContext } from 'react';
-import { AuthContext } from '../AuthContext';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
-import Axios from 'axios';
+import React, { Component } from "react";
+import { login } from "./UserFunctions";
 
-const LoginForm = props => {
+class Login extends Component {
+    constructor() {
+        super();
+        this.state = {
+            email: "",
+            password: "",
+            errors: {},
+        };
 
-    const { setIsAuth } = useContext(AuthContext)
-    const emptyCreds = { emailInput: '', passwordInput: '' }
-    const errorMessage = 'invalid credentials'
-    const [formData, setFormData] = useState(emptyCreds)
-    const [credsAreInvalid, setCredsAreInvalid] = useState('')
-
-    const handleInputChange = event => {
-        event.preventDefault()
-        const { name, value } = event.target
-        setFormData({ ...formData, [name]: value });
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
-    const handleFormSubmit = event => {
-        event.preventDefault()
-        const inputCreds = {
-            email: formData.emailInput,
-            password: formData.passwordInput
-        }
-        login(inputCreds)
-        setFormData(emptyCreds)
+    onChange(e) {
+        this.setState({ [e.target.name]: e.target.value });
+    }
+    onSubmit(e) {
+        e.preventDefault();
+
+        const user = {
+            email: this.state.email,
+            password: this.state.password,
+        };
+
+        login(user).then((res) => {
+            if (res) {
+                this.props.history.push(`/users/profile`);
+            }
+        });
     }
 
-    const login = loginCreds => {
-        Axios.post('/api/auth/login', loginCreds)
-            .then(user => {
-                console.log("login response ", user)
-                setIsAuth(true)
-            })
-            .catch(err => {
-                setCredsAreInvalid(errorMessage)
-                console.log(err)
-            })
+    render() {
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6 mt-5 mx-auto">
+                        <form noValidate onSubmit={this.onSubmit}>
+                            <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                            <div className="form-group">
+                                <label htmlFor="email">Email address</label>
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    name="email"
+                                    placeholder="Enter email"
+                                    value={this.state.email}
+                                    onChange={this.onChange}
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="password">Password</label>
+                                <input
+                                    type="password"
+                                    className="form-control"
+                                    name="password"
+                                    placeholder="Password"
+                                    value={this.state.password}
+                                    onChange={this.onChange}
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                className="btn btn-lg btn-primary btn-block"
+                            >
+                                Sign in
+              </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        );
     }
-
-    return (
-        <Form onSubmit={handleFormSubmit}>
-            <Form.Group controlId="emailInput">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control name="emailInput" type="email" placeholder="Enter email" value={formData.emailInput} onChange={handleInputChange} />
-            </Form.Group>
-            <Form.Group controlId="inputPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control name="passwordInput" type="password" placeholder="Password" value={formData.passwordInput} onChange={handleInputChange} />
-            </Form.Group>
-            <Form.Group>
-                <Form.Text className="text-danger">
-                    {credsAreInvalid}
-                </Form.Text>
-            </Form.Group>
-            <Button className='m-1' variant="primary" type="submit">
-                Submit
-            </Button>
-            {/* <Button className='m-1' onClick={e => {
-                e.preventDefault();
-                props.history.push('/signup')
-            }}>Signup</Button>
-            <Button className='m-1' onClick={e => {
-                e.preventDefault();
-                props.history.push('/')
-            }}>Home</Button> */}
-        </Form>
-    )
 }
 
-export default LoginForm;
+export default Login;
