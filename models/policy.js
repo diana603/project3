@@ -22,9 +22,10 @@ module.exports = function (sequelize, DataTypes) {
       unique: false,
     },
     beneficiaries: {
-
+      type: DataTypes.STRING,
     },
     amount: {
+      type: DataTypes.INTEGER,
 
     },
 
