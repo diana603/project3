@@ -4,7 +4,7 @@ import Axios from "axios";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "../App.css";
 
-const Members = props => {
+const Members = (props) => {
   // Destructure the logout function from AuthContext
   const { logout } = useContext(AuthContext);
 
