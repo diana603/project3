@@ -3,9 +3,13 @@ import { Route, Switch, BrowserRouter as Router, Redirect } from "react-router-d
 import { AuthProvider, AuthContext } from "./AuthContext";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
-import Login from "./pages/Login";
-import Members from "./pages/Members";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginForm from "./pages/Login";
+import Profile from "./pages/Members";
+import Customer from "./pages/Customer";
+import BeneficiaryForm from "./pages/BeneficiaryForm";
+
 
 // Even though this is the App.js file, in the end we are not exactly exporting
 // the App component.  We actually set up the app component to implement our react
@@ -27,7 +31,7 @@ function App() {
     <Route
       {...rest}
       render={props =>
-        isAuth ? <Component {...props} /> : <Redirect to="/login" />
+        isAuth ? <Component {...props} /> : <Redirect to="/users/profile" />
       }
     />
   );
@@ -40,9 +44,12 @@ function App() {
           path="/"
           render={props => <Home {...props} />}
         />
-        <Route exact path="/login" render={props => <Login {...props} />} />
-        <Route exact path="/signup" render={props => <Signup {...props} />} />
-        <PrivateRoute exact path="/members" component={Members} />
+        <Route exact path="/users/login" render={props => <LoginForm {...props} />} />
+        <Route exact path="/users/register" render={props => <Signup {...props} />} />
+        <Route exact path="/customer" component={Customer} />
+        <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
+        
+        <PrivateRoute exact path="/users/profile" component={Profile} />
       </Switch>
     </Router>
   );

@@ -1,0 +1,31 @@
+.myJumbotron {
+    background-color: #007BFF !important ;
+}
+
+.text{
+    color:white; 
+}
+.beneForm{
+    padding-top: 20px
+}
+.introSentence{
+    display:flex;
+    justify-content:space-between; 
+    font-size: 190%; 
+}
+.beneBtn{
+    display:flex;
+    justify-content: flex-end; 
+}
+.gobackBtn{
+    margin-right:2%; 
+}
+.formbtn{
+    display:flex; 
+    justify-content: space-around;
+    margin-top: 5%; 
+}
+
+h2 {
+    text-align: center;
+}

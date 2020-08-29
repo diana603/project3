@@ -2,12 +2,12 @@
   padding-top: 100px;
 }
 
-body {
-  background-color: #007BFF !important;
+.LoginJumbotron {
+  background-color: #007BFF !important ;
 }
 
 .m-1 {
-  background-color: black;
+  background-color: black !important;
 }
 
 .intro {
@@ -22,3 +22,9 @@ h1.pageHeader {
   color: aliceblue;
   font-size: 50px
 }
+
+.insurance {
+  text-align: center;
+  color: white; 
+}
+

@@ -26,10 +26,10 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       unique: false,
     },
-    amount: {
+      amount: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      unique: false,
+
+
     },
 
   });
