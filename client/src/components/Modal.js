@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
-import modal from "../pages/assets/modal.css";
+// import modal from "../pages/assets/modal.css";
 import {Link} from "react-router-dom";
 
 

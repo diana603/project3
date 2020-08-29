@@ -19,7 +19,6 @@ const BeneficiaryForm = () => {
         }          
     }
     return (
-<Document>
     <Container className="beneForm">
         <div className="introSentence">
             <p> East Coast Life Insurance </p> 
@@ -346,9 +345,7 @@ and waive any rights that I may have to the death benefit proceeds of such polic
             </Button>
         </div>
      </Form>
-
      </Container>
-</Document>
     )
 }
 export default BeneficiaryForm; 
