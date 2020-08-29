@@ -1,16 +1,19 @@
-var express = require('express');
-var cors = require("cors");
-var bodyParser = require("body-parser");
-var app = express();
-var mongoose = require("mongoose");
-var port = process.env.PORT || 5000;
-app.use(bodyParser.json());
-app.use(cors());
-app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
-)
+
+const express = require('express');
+const session = require('express-session');
+const path = require('path');
+const passport = require('passport');
+const db = require('./models');
+const routes = require('./routes');
+
+const app = express();
+const PORT = process.env.PORT || 8080;
+
+// Serve static files from the React app build directory
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Express boilerplate middleware
+
 
 const mongoURI = 'mongodb://localhost:27017/projecttest'
 

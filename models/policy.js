@@ -23,9 +23,12 @@ module.exports = function (sequelize, DataTypes) {
     },
     beneficiaries: {
       type: DataTypes.STRING,
+      allowNull: false,
+      unique: false,
     },
-    amount: {
+      amount: {
       type: DataTypes.INTEGER,
+
 
     },
 
