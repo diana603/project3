@@ -16,16 +16,11 @@ export class BootstrapCarousel extends Component {
                 src={'../assets/img/family_1920.jpg'} />
 
               < Carousel.Caption >
-                < h3 > Life </h3 >
+                < h3 > For all the little moments in life, Life Insurance is the key to protect them </h3 >
               </Carousel.Caption >
             </Carousel.Item >
 
-            < Carousel.Item style={{ 'height': "500px" }}>
-
-              < img style={{ 'height': "500px" }}
-
-
-            <Carousel.Item style={{ height: "600px" }}>
+            < Carousel.Item style={{ height: "600px" }}>
               <img
                 style={{ height: "600px" }}
                 className="d-block w-100"
@@ -35,8 +30,9 @@ export class BootstrapCarousel extends Component {
 
               < Carousel.Caption >
 
-                < h3 > Auto</h3 >
+                < h3 >On the road or at home, safeguard your future</h3 >
               </Carousel.Caption >
+
             </Carousel.Item >
             < Carousel.Item style={{ 'height': "500px" }}>
               < img style={{ 'height': "500px" }}
@@ -47,9 +43,10 @@ export class BootstrapCarousel extends Component {
 
               < Carousel.Caption >
 
-                < h3 > Home</h3 >
+                < h3 > The biggest investment in your life deserves only the best.</h3 >
 
               </Carousel.Caption >
+
             </Carousel.Item >
             < Carousel.Item style={{ 'height': "500px" }}>
               < img style={{ 'height': "500px" }}
@@ -60,7 +57,7 @@ export class BootstrapCarousel extends Component {
 
               < Carousel.Caption >
 
-                < h3 > Life</h3 >
+                < h3 > From the heights to the lows, be reassured that East Coast is with you</h3 >
 
               </Carousel.Caption >
             </Carousel.Item >
@@ -73,7 +70,7 @@ export class BootstrapCarousel extends Component {
 
               < Carousel.Caption >
 
-                < h3 > Life</h3 >
+                < h3 > Love, live, laugh with East Coast Life Insurance</h3 >
 
               </Carousel.Caption >
             </Carousel.Item >
@@ -86,7 +83,7 @@ export class BootstrapCarousel extends Component {
 
               < Carousel.Caption >
 
-                < h3 > Sunset</h3 >
+                < h3 > On the sunset of your life think about leaving a better future for them</h3 >
 
               </Carousel.Caption >
             </Carousel.Item >

@@ -27,8 +27,6 @@ function Home(props) {
         <Row>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
 
-            {/* <h1 className="pageHeader" style={{ color: 'white' }}>Welcome to East Coast Life Insurance</h1> */}
-
             <Carousel />
 
             {isAuth ? (
@@ -86,4 +84,7 @@ function Home(props) {
         {/* <Footer>Copyright 2020</Footer> */}
       </Container>
       <Footer />
-    </Jumbotron>
+    </Jumbotron>)
+}
+
+export default Home;
