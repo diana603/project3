@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
+import React, { Component } from "react";
+import Carousel from "react-bootstrap/Carousel";
+
 
 export class BootstrapCarousel extends Component {
   render() {
     return (
+
       < div >
         < div className='container-fluid' >
           < Carousel >
@@ -22,7 +24,12 @@ export class BootstrapCarousel extends Component {
 
               < img style={{ 'height': "500px" }}
 
+
+            <Carousel.Item style={{ height: "600px" }}>
+              <img
+                style={{ height: "600px" }}
                 className="d-block w-100"
+
 
                 src={'../assets/img/fiat.jpg'} />
 
@@ -87,8 +94,8 @@ export class BootstrapCarousel extends Component {
         </div >
       </div >
     )
-  }
 
+  }
 }
 
-export default BootstrapCarousel  
+export default BootstrapCarousel;
