@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
+import modal from "../pages/assets/modal.css";
+
 
  function ModalView(props) {
     
     const { show, handleHide } = props;
 
-    
   
     return (
       <>
@@ -17,11 +18,11 @@ import {render} from 'react-dom';
           aria-labelledby="example-modal-sizes-title-lg"
         >
           <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-lg">
-              Large Modal
+            <Modal.Title>
+              Benef Form
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body>...</Modal.Body>
+          <Modal.Body>Info on B.</Modal.Body>
         </Modal>
       </>
     );
