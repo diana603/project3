@@ -1,11 +1,28 @@
-import  React from 'react';
+import  React, {useState} from 'react';
 import customer from './customer.css';
 import {states} from "./states";
 import {Form, Col, Button, Container} from 'react-bootstrap/'
+import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
+import ReactPDF from '@react-pdf/renderer';
 
 
 const BeneficiaryForm = () => { 
+    const [state, setState] = useState("");
+
+    const handleStateChange = (e) => {
+        console.log(e.target.value)
+        setState(e.target.value)
+    }
+
+    const verifyform = ()=> {
+        if (!state || state === "Select State"){
+            alert("Please Enter Address")
+        }else if (state === "MA" ){
+            alert("Please Note in the State of MA your signature must be witnessed by a disinterested third party")
+        }          
+    }
     return (
+<Document>
     <Container className="beneForm">
         <div className="introSentence">
             <p> East Coast Life Insurance </p> 
@@ -47,7 +64,7 @@ const BeneficiaryForm = () => {
 
          <Form.Group as={Col} controlId="formGridState">
          <Form.Label>State</Form.Label>
-         <Form.Control as="select" defaultValue="Choose...">
+         <Form.Control as="select" onChange={handleStateChange}defaultValue="Choose...">
          <option>Select State</option>         
             {states && states.map((state)=> (
                 <option>{state}</option>
@@ -310,25 +327,31 @@ and waive any rights that I may have to the death benefit proceeds of such polic
                 <Form.Label>Signature of Additional Owner or Irrevocable Beneficiary (if applicable) and Date(mmddyyyy) </Form.Label>
                 <Form.Control placeholder="Sign Here" />
                 </Form.Group>  
+
+        <div>
+            <p>
+            Important: In Massachusett s, the owner’s signature must be witnessed by a disinterested person, over the age of 18, who is not being named
+            as a beneficiary.
+            </p>
+        </div>
+
+        <Form.Group controlId="formGridAddress1">
+                <Form.Label>Signature of Witness and Date(mmddyyyy) </Form.Label>
+                <Form.Control placeholder="Sign Here" />
+                </Form.Group>
  
-
-        
-
-        
-
-    
-
         <div className="beneBtn">
-            <Button className="gobackBtn" variant="primary" type="submit">
+            <Button className="gobackBtn" variant="primary">
                Go Back
             </Button >
-            <Button variant="primary" type="submit">
+            <Button onClick={verifyform} variant="primary">
                Next
             </Button>
         </div>
      </Form>
 
      </Container>
+</Document>
     )
 }
 export default BeneficiaryForm; 
