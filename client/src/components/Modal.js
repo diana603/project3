@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
-import modal from "../pages/assets/modal.css";
+// import modal from "../pages/assets/modal.css";
 import {Link} from "react-router-dom";
 
 
  function ModalView(props) {
     
-    const { show, handleHide, modalInfo, modalTitle, nextButton } = props;
+    const { show, handleHide, modalInfo, modalTitle, nextButton, formLink } = props;
 
     return (
       <>
@@ -21,9 +21,9 @@ import {Link} from "react-router-dom";
             <Modal.Title>{modalTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>{modalInfo}</Modal.Body>
-          <Link to="/BeneficiaryForm">
-            <Button>{nextButton}</Button>
-          </Link>
+            <Button>{nextButton}
+              {/* <Link>{formLink}</Link> */}
+            </Button>
           {/* <Link to="/BeneficiaryForm">
             <Button onClick={show} variant="primary" size="lg">
                Change of Beneficiary
