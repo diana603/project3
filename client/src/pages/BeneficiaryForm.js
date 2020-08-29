@@ -2,9 +2,6 @@ import  React, {useState} from 'react';
 import customer from './customer.css';
 import {states} from "./states";
 import {Form, Col, Button, Container} from 'react-bootstrap/'
-import { Document, Page, Text, View, StyleSheet } from '@react-pdf/renderer';
-import ReactPDF from '@react-pdf/renderer';
-
 
 const BeneficiaryForm = () => { 
     const [state, setState] = useState("");
@@ -22,7 +19,7 @@ const BeneficiaryForm = () => {
         }          
     }
     return (
-<Document>
+
     <Container className="beneForm">
         <div className="introSentence">
             <p> East Coast Life Insurance </p> 
@@ -351,7 +348,6 @@ and waive any rights that I may have to the death benefit proceeds of such polic
      </Form>
 
      </Container>
-</Document>
     )
 }
 export default BeneficiaryForm; 

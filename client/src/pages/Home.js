@@ -6,8 +6,8 @@ import Axios from "axios";
 import Carousel from "../components/BootstrapCarousel";
 import Footer from "../components/Footer";
 
-function Home(props) {
 
+function Home(props) {
   const { isAuth, logout } = useContext(AuthContext);
 
   const [secret, setSecret] = useState("");
@@ -87,7 +87,3 @@ function Home(props) {
       </Container>
       <Footer />
     </Jumbotron>
-  );
-}
-
-export default Home;
