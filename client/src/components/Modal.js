@@ -20,9 +20,12 @@ import {Link} from "react-router-dom";
             <Modal.Title>{modalTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>{modalInfo}</Modal.Body>
-            <Button>{nextButton}
-              {/* <Link>{formLink}</Link> */}
+            <Button onClick={e => {
+                    e.preventDefault();
+                    props.history.push({formLink});
+                  }}>{nextButton}
             </Button>
+            
           {/* <Link to="/BeneficiaryForm">
             <Button onClick={show} variant="primary" size="lg">
                Change of Beneficiary
