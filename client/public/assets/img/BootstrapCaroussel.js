@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-
 export class BootstrapCarousel extends Component {
   render() {
     return (
@@ -12,11 +11,11 @@ export class BootstrapCarousel extends Component {
               <img
                 style={{ height: "600px" }}
                 className="d-block w-100"
-                src={"../assets/img/family.jpg"}
+                src={"../pages/images/family.jpg"}
               />
 
               <Carousel.Caption>
-                <h3> Life </h3>
+                <h3> First Demo </h3>
               </Carousel.Caption>
             </Carousel.Item>
 
@@ -24,22 +23,22 @@ export class BootstrapCarousel extends Component {
               <img
                 style={{ height: "600px" }}
                 className="d-block w-100"
-                src={"../assets/img/fiat.jpg"}
+                src={"../pages/images/landscape.jpg"}
               />
 
               <Carousel.Caption>
-                <h3> Auto</h3>
+                <h3> Second Demo</h3>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item style={{ height: "600px" }}>
               <img
                 style={{ height: "600px" }}
                 className="d-block w-100"
-                src={"../assets/img/home.jpg"}
+                src={"../pages/images/sunset.jpg"}
               />
 
               <Carousel.Caption>
-                <h3> Home</h3>
+                <h3> Third Demo</h3>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
