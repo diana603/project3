@@ -1,9 +1,10 @@
 .signup {
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 .LoginJumbotron {
   background-color: #007BFF !important ;
+  padding-top: 2rem;
 }
 
 .m-1 {
@@ -18,7 +19,7 @@
 }
 
 h1.pageHeader {
-  margin: 25px;
+  margin: 2px;
   color: aliceblue;
   font-size: 50px
 }
@@ -28,3 +29,6 @@ h1.pageHeader {
   color: white; 
 }
 
+footer {
+  text-align-last: center;
+}

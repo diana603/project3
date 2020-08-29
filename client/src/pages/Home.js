@@ -3,8 +3,8 @@ import { AuthContext } from "../AuthContext";
 import "../App.css";
 import { Container, Row, Button, Col, Jumbotron } from "react-bootstrap";
 import Axios from "axios";
-import family from "./images/family.jpg"
-// import { Footer } from "react-bootstrap/lib/Modal";
+import Carousel from "../components/BootstrapCarousel";
+import Footer from "../components/Footer";
 
 function Home(props) {
 
@@ -12,80 +12,80 @@ function Home(props) {
 
   const [secret, setSecret] = useState("");
 
-  // this function is duplicated in the Members page component
-  // consider refactor 
-  const getSecret = async () => {
-    const secretResponse = await Axios.get("/api/secrets");
-    console.log(secretResponse.data);
-    setSecret(secretResponse.data);
-  };
+  // // this function is duplicated in the Members page component
+  // // consider refactor 
+  // const getSecret = async () => {
+  //   const secretResponse = await Axios.get("/api/secrets");
+  //   console.log(secretResponse.data);
+  //   setSecret(secretResponse.data);
+  // };
 
   return (
-<Jumbotron className="LoginJumbotron" fluid >
-    <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
-    <Container className="signup">
-      <Row>
-        <Col className="intro" md={{ span: 8, offset: 2 }}>
+    <Jumbotron className="LoginJumbotron" fluid >
+      <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
+      <Container className="signup">
+        <Row>
+          <Col className="intro" md={{ span: 8, offset: 2 }}>
 
-          <h1 className="pageHeader" style={{ color: 'white' }}>Welcome to East Coast Life Insurance</h1>
+            {/* <h1 className="pageHeader" style={{ color: 'white' }}>Welcome to East Coast Life Insurance</h1> */}
 
+            <Carousel />
 
-          <img src={family} alt="This a family" />
-          <br></br>
-          {isAuth ? (
-            <>
-              <Button
-                className="m-1"
-                onClick={e => {
-                  e.preventDefault();
-                  setSecret('');
-                  logout();
-                }}
-              >
-                Logout
-              </Button>
-              <Button
-                className="m-1"
-                onClick={e => {
-                  e.preventDefault();
-                  props.history.push("/users/profile");
-                }}
-              >
-                Members
-              </Button>
-            </>
-          ) : (
+            {isAuth ? (
               <>
                 <Button
                   className="m-1"
                   onClick={e => {
                     e.preventDefault();
-                    props.history.push("/users/login");
+                    setSecret('');
+                    logout();
                   }}
                 >
-                  Login
+                  Logout
               </Button>
                 <Button
                   className="m-1"
                   onClick={e => {
                     e.preventDefault();
-                    props.history.push("/users/register");
+                    props.history.push("/users/profile");
                   }}
                 >
-                  Signup
+                  Members
               </Button>
               </>
-            )}
+            ) : (
+                <>
+                  <Button
+                    className="m-1"
+                    onClick={e => {
+                      e.preventDefault();
+                      props.history.push("/users/login");
+                    }}
+                  >
+                    Login
+              </Button>
+                  <Button
+                    className="m-1"
+                    onClick={e => {
+                      e.preventDefault();
+                      props.history.push("/users/register");
+                    }}
+                  >
+                    Signup
+              </Button>
+                </>
+              )}
 
-        </Col>
-      </Row>
-      <Row>
-        <Col md={{ span: 8, offset: 2 }}>
-          <h1>{secret}</h1>
-        </Col>
-      </Row>
-      {/* <Footer>Copyright 2020</Footer> */}
-    </Container>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }}>
+            <h1>{secret}</h1>
+          </Col>
+        </Row>
+        {/* <Footer>Copyright 2020</Footer> */}
+      </Container>
+      <Footer />
     </Jumbotron>
   );
 }
