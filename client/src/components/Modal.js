@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
 import modal from "../pages/assets/modal.css";
+import {Link} from "react-router-dom";
 
 
  function ModalView(props) {
     
-    const { show, handleHide } = props;
+    const { show, handleHide, modalInfo, modalTitle, nextButton } = props;
 
-  
     return (
       <>
         <Modal
@@ -18,12 +18,20 @@ import modal from "../pages/assets/modal.css";
           aria-labelledby="example-modal-sizes-title-lg"
         >
           <Modal.Header closeButton>
-            <Modal.Title>
-              Benef Form
-            </Modal.Title>
+            <Modal.Title>{modalTitle}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Info on B.</Modal.Body>
+          <Modal.Body>{modalInfo}</Modal.Body>
+          <Link to="/BeneficiaryForm">
+            <Button>{nextButton}</Button>
+          </Link>
+          {/* <Link to="/BeneficiaryForm">
+            <Button onClick={show} variant="primary" size="lg">
+               Change of Beneficiary
+            </Button>
+            </Link> */}
         </Modal>
+
+
       </>
     );
   }

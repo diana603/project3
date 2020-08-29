@@ -7,7 +7,7 @@
 
     "start-react": "npm start --prefix client",
     "start": "nodemon server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "dev": "nodemon server.js"
 
   },
