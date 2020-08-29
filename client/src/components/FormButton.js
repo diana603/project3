@@ -9,6 +9,7 @@ const FormButton = props => {
     const [modalInfo, setModalInfo] = useState("");
     const [modalTitle, setModalTitle] = useState("");
     const [nextButton, setNextButton] = useState("");
+    const [formLink, setFormLink] = useState();
 
     const handleShow = () => setShow(true);
     const handleHide = () => setShow(false);
@@ -16,6 +17,7 @@ const FormButton = props => {
         setModalInfo("Here you can complete a Beneficiary Form. Press next to continue.")
         setModalTitle("Beneficiary Form")
         setNextButton("Next")
+        setFormLink()
         setShow(true)
     };
     const showChangeForm = () => {
@@ -46,7 +48,7 @@ const FormButton = props => {
                   W9 Form 
             </Button> 
         </div>
-        <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton}/>
+        <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton} formLink={formLink}/>
     </div> 
     )
 }
