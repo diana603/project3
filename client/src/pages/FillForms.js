@@ -3,7 +3,6 @@ import { AuthContext } from "../AuthContext";
 import "../App.css";
 import { Container, Row, Button, Col, Jumbotron } from "react-bootstrap";
 import Axios from "axios";
-import Carousel from "../components/BootstrapCarousel";
 import Footer from "../components/Footer";
 
 
@@ -26,8 +25,6 @@ function Home(props) {
       <Container className="signup">
         <Row>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
-
-            <Carousel />
 
             {isAuth ? (
               <>
@@ -89,4 +86,6 @@ function Home(props) {
 }
 
 export default Home;
+
+
 
