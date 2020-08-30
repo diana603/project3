@@ -84,7 +84,10 @@ function Home(props) {
         {/* <Footer>Copyright 2020</Footer> */}
       </Container>
       <Footer />
-    </Jumbotron>)
+
+    </Jumbotron>
+)
 }
 
 export default Home;
+
