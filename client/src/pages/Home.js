@@ -45,7 +45,7 @@ function Home(props) {
                   className="m-1"
                   onClick={e => {
                     e.preventDefault();
-                    props.history.push("/users/profile");
+                    props.history.push("/profile");
                   }}
                 >
                   Members
@@ -57,7 +57,7 @@ function Home(props) {
                     className="m-1"
                     onClick={e => {
                       e.preventDefault();
-                      props.history.push("/users/login");
+                      props.history.push("/login");
                     }}
                   >
                     Login
@@ -66,7 +66,7 @@ function Home(props) {
                     className="m-1"
                     onClick={e => {
                       e.preventDefault();
-                      props.history.push("/users/register");
+                      props.history.push("/register");
                     }}
                   >
                     Signup
