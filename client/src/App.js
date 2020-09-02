@@ -9,6 +9,7 @@ import LoginForm from "./pages/Login";
 import Profile from "./pages/Members";
 import Customer from "./pages/Customer";
 import BeneficiaryForm from "./pages/BeneficiaryForm";
+import OwnershipForm from "./pages/OwnershipForm";
 
 
 // Even though this is the App.js file, in the end we are not exactly exporting
@@ -48,6 +49,8 @@ function App() {
         <Route exact path="/signup" render={props => <Signup {...props} />} />
         <Route exact path="/customer" component={Customer} />
         <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
+        <Route exact path="/OwnershipForm" component={OwnershipForm} />
+        
       </Switch>
     </Router>
   );

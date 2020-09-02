@@ -3,7 +3,6 @@ import { AuthContext } from "../AuthContext";
 import "../App.css";
 import { Container, Row, Button, Col, Jumbotron } from "react-bootstrap";
 import Axios from "axios";
-import Carousel from "../components/BootstrapCarousel";
 import Footer from "../components/Footer";
 
 
@@ -27,8 +26,6 @@ function Home(props) {
         <Row>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
 
-            <Carousel />
-
             {isAuth ? (
               <>
                 <Button
@@ -45,7 +42,7 @@ function Home(props) {
                   className="m-1"
                   onClick={e => {
                     e.preventDefault();
-                    props.history.push("/profile");
+                    props.history.push("/users/profile");
                   }}
                 >
                   Members
@@ -57,7 +54,7 @@ function Home(props) {
                     className="m-1"
                     onClick={e => {
                       e.preventDefault();
-                      props.history.push("/login");
+                      props.history.push("/users/login");
                     }}
                   >
                     Login
@@ -66,7 +63,7 @@ function Home(props) {
                     className="m-1"
                     onClick={e => {
                       e.preventDefault();
-                      props.history.push("/signup");
+                      props.history.push("/users/register");
                     }}
                   >
                     Signup
@@ -89,4 +86,6 @@ function Home(props) {
 }
 
 export default Home;
+
+
 

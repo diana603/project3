@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
 import {Link} from "react-router-dom";
@@ -32,17 +33,16 @@ import ModalStyle from "../pages/assets/modal.css";
                Change of Beneficiary
             </Button>
             </Link> */}
-        </Modal>
+      </Modal>
 
 
-      </>
-    );
-  }
-  
+    </>
+  );
+}
+
 //  render(<Example />);
 
-  export default ModalView;
+export default ModalView;
 
 
 
-  

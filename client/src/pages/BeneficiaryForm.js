@@ -345,7 +345,6 @@ and waive any rights that I may have to the death benefit proceeds of such polic
             </Button>
         </div>
      </Form>
-
      </Container>
     )
 }
