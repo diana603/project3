@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
 import {Link} from "react-router-dom";
+import ModalStyle from "../pages/assets/modal.css";
 
 
  function ModalView(props) {
