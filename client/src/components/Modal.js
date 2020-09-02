@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import {Button, Modal} from "react-bootstrap";
 import {render} from 'react-dom';
 import {Link} from "react-router-dom";
+import ModalStyle from "../pages/assets/modal.css";
 
 
  function ModalView(props) {
     
-    const { show, handleHide, modalInfo, modalTitle, nextButton } = props;
+    const { show, handleHide, modalInfo, modalTitle, nextButton, formLink } = props;
 
     return (
       <>
@@ -21,9 +22,12 @@ import {Link} from "react-router-dom";
             <Modal.Title>{modalTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>{modalInfo}</Modal.Body>
-          <Link to="/BeneficiaryForm">
-            <Button>{nextButton}</Button>
-          </Link>
+            <Button onClick={e => {
+                    e.preventDefault();
+                    props.history.push({formLink});
+                  }}>{nextButton}
+            </Button>
+            
           {/* <Link to="/BeneficiaryForm">
             <Button onClick={show} variant="primary" size="lg">
                Change of Beneficiary
