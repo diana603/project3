@@ -66,7 +66,7 @@ function Home(props) {
                     className="m-1"
                     onClick={e => {
                       e.preventDefault();
-                      props.history.push("/register");
+                      props.history.push("/signup");
                     }}
                   >
                     Signup
