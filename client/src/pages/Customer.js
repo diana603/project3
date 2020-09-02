@@ -1,7 +1,8 @@
 import React from 'react';
 import { Jumbotron, Container, Button} from 'react-bootstrap';
 import customer from './customer.css';
-import FormButton from '../components/FormButton'
+import FormButton from '../components/FormButton';
+import Parallax from "../components/Parallax";
 
 const Customer = () => {
     return (
@@ -10,8 +11,8 @@ const Customer = () => {
             <Container>
                 <h1 className="text">Customer Service Forms</h1>
             </Container>
-        </Jumbotron> 
-                <FormButton/>
+        </Jumbotron>
+        <Parallax />
         </>
     )
 }

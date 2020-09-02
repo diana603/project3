@@ -1,5 +1,7 @@
 .myJumbotron {
     background-color: #007BFF !important ;
+    /* background-image: url(../pages/images/formimg.jpg); background-size: 100%; */
+    margin-bottom: 5px;
 }
 
 .text{
@@ -28,4 +30,15 @@
 
 h2 {
     text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.BForm, .OForm, .WForm {
+    background-color: black;
+}
+
+.formBody {
 }

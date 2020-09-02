@@ -9,6 +9,7 @@ const FormButton = props => {
     const [modalInfo, setModalInfo] = useState("");
     const [modalTitle, setModalTitle] = useState("");
     const [nextButton, setNextButton] = useState("");
+    const [formLink, setFormLink] = useState("");
 
     const handleShow = () => setShow(true);
     const handleHide = () => setShow(false);
@@ -16,38 +17,42 @@ const FormButton = props => {
         setModalInfo("Here you can complete a Beneficiary Form. Press next to continue.")
         setModalTitle("Beneficiary Form")
         setNextButton("Next")
+        // setFormLink("../BeneficiaryForm")
         setShow(true)
     };
     const showChangeForm = () => {
         setModalTitle("Change of Ownership")
         setModalInfo("Here you can complete a form for Change of Ownership.")
+        setNextButton("Next")
         setShow(true)
     };
     const showWForm = () => {
         setModalTitle("W9 Form")
         setModalInfo("Here you can complete a W9 Form.")
+        setNextButton("Next")
         setShow(true)
     };
 
 
     return (
-    <div>
-         <h2>Please Select From The Following Forms </h2>
+    <div className="formBody">
+         <h2>Please Select The Form You Would Like to Complete</h2>
+         <h3>Tip: For details on each form, hover over the button.</h3>
         <div className="formbtn">
             <Link to="/BeneficiaryForm">
-            <Button onMouseEnter={showBeneficiaryForm} variant="primary" size="lg">
+            <Button onMouseEnter={showBeneficiaryForm} variant="primary" size="lg" className="BForm">
                Change of Beneficiary
             </Button>
             </Link>
-            <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg">
-                  Change of Ownership
+            <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg" className="OForm">
+                  Change of Ownership 
             </Button>
             <Button  onMouseEnter={showWForm} variant="primary" size="lg" className="WForm">
                   W9 Form
             </Button>
         </div>
-        <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton}/>
-    </div>
+        <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton} formLink={formLink}/>
+    </div> 
     )
 }
 
