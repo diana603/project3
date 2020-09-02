@@ -87,3 +87,7 @@ function Home(props) {
       </Container>
       <Footer />
     </Jumbotron>
+  )
+}
+
+export default Home;

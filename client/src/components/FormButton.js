@@ -40,14 +40,14 @@ const FormButton = props => {
             </Button>
             </Link>
             <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg">
-                  Change of Ownership 
-            </Button> 
+                  Change of Ownership
+            </Button>
             <Button  onMouseEnter={showWForm} variant="primary" size="lg" className="WForm">
-                  W9 Form 
-            </Button> 
+                  W9 Form
+            </Button>
         </div>
         <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton}/>
-    </div> 
+    </div>
     )
 }
 

@@ -3,7 +3,7 @@ import customer from './customer.css';
 import {states} from "./states";
 import {Form, Col, Button, Container} from 'react-bootstrap/'
 
-const OwnershipForm = () => { 
+export default function OwnershipForm() { 
     const [state, setState] = useState("");
 
     const handleStateChange = (e) => {
@@ -74,6 +74,7 @@ const OwnershipForm = () => {
          <Form.Control />
         </Form.Group>
         </Form.Row>
+        </Form>
+    </Container> 
     )
 }
-export default OwnershipForm;

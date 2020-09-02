@@ -9,7 +9,7 @@ export class BootstrapCarousel extends Component {
       < div >
         < div className='container-fluid' >
           < Carousel >
-            < Carousel.Item style={{ 'height': "500px" }} >
+            < Carousel.Item style={{ 'height': "600px" }} >
               < img style={{ 'height': "500px" }}
 
                 className="d-block w-100"
@@ -19,11 +19,6 @@ export class BootstrapCarousel extends Component {
                 < h3 > Life </h3 >
               </Carousel.Caption >
             </Carousel.Item >
-
-            < Carousel.Item style={{ 'height': "500px" }}>
-
-              < img style={{ 'height': "500px" }}
-
 
             <Carousel.Item style={{ height: "600px" }}>
               <img
@@ -38,7 +33,7 @@ export class BootstrapCarousel extends Component {
                 < h3 > Auto</h3 >
               </Carousel.Caption >
             </Carousel.Item >
-            < Carousel.Item style={{ 'height': "500px" }}>
+            < Carousel.Item style={{ 'height': "600px" }}>
               < img style={{ 'height': "500px" }}
 
                 className="d-block w-100"
@@ -51,7 +46,7 @@ export class BootstrapCarousel extends Component {
 
               </Carousel.Caption >
             </Carousel.Item >
-            < Carousel.Item style={{ 'height': "500px" }}>
+            < Carousel.Item style={{ 'height': "600px" }}>
               < img style={{ 'height': "500px" }}
 
                 className="d-block w-100"
@@ -64,7 +59,7 @@ export class BootstrapCarousel extends Component {
 
               </Carousel.Caption >
             </Carousel.Item >
-            < Carousel.Item style={{ 'height': "500px" }}>
+            < Carousel.Item style={{ 'height': "600px" }}>
               < img style={{ 'height': "500px" }}
 
                 className="d-block w-100"
@@ -77,7 +72,7 @@ export class BootstrapCarousel extends Component {
 
               </Carousel.Caption >
             </Carousel.Item >
-            < Carousel.Item style={{ 'height': "500px" }}>
+            < Carousel.Item style={{ 'height': "600px" }}>
               < img style={{ 'height': "500px" }}
 
                 className="d-block w-100"

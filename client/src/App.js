@@ -9,6 +9,7 @@ import LoginForm from "./pages/Login";
 import Profile from "./pages/Members";
 import Customer from "./pages/Customer";
 import BeneficiaryForm from "./pages/BeneficiaryForm";
+import OwnershipForm from "./pages/OwnershipForm";
 
 
 // Even though this is the App.js file, in the end we are not exactly exporting
