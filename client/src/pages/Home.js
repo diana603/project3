@@ -21,8 +21,10 @@ function Home(props) {
   // };
 
   return (
-    <Jumbotron className="LoginJumbotron" fluid >
-      <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
+    <Container className="LoginJumbotron" fluid >
+      <Jumbotron fluid>cd
+        <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
+      </Jumbotron>
       <Container className="signup">
         <Row>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
@@ -84,7 +86,7 @@ function Home(props) {
       </Container>
       <Footer />
 
-    </Jumbotron>
+    </Container>
   )
 }
 
