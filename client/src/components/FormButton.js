@@ -17,19 +17,21 @@ const FormButton = props => {
         setModalInfo("Here you can complete a Beneficiary Form. Press next to continue.")
         setModalTitle("Beneficiary Form")
         setNextButton("Next")
-        // setFormLink("../BeneficiaryForm")
+        setFormLink("/BeneficiaryForm")
         setShow(true)
     };
     const showChangeForm = () => {
         setModalTitle("Change of Ownership")
         setModalInfo("Here you can complete a form for Change of Ownership.")
         setNextButton("Next")
+        setFormLink("/OwnershipForm")
         setShow(true)
     };
     const showWForm = () => {
         setModalTitle("W9 Form")
         setModalInfo("Here you can complete a W9 Form.")
         setNextButton("Next")
+        setFormLink("/")
         setShow(true)
     };
 
@@ -37,7 +39,7 @@ const FormButton = props => {
     return (
     <div className="formBody">
          <h2>Please Select The Form You Would Like to Complete</h2>
-         <h3>Tip: For details on each form, hover over the button.</h3>
+         <h3>Tip: For details on each form, hover over the corresponding button.</h3>
         <div className="formbtn">
             <Link to="/BeneficiaryForm">
             <Button onMouseEnter={showBeneficiaryForm} variant="primary" size="lg" className="BForm">
