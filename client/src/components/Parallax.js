@@ -6,8 +6,8 @@ const MyComponent = () => (
     <div>
         {/* -----dynamic blur-----*/}
         <Parallax
-            blur={{ min: -15, max: 15 }}
-            bgImage={require('../pages/images/formimg.jpg')}
+            // blur={{ min: -15, max: 15 }}
+            bgImage={require('../pages/images/second.jpg')}
             bgImageAlt="the dog"
             strength={-200}
         >
