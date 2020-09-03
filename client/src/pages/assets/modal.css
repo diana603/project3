@@ -8,5 +8,8 @@
 
 .MButton {
     font-size: 20px;
-
+    padding: revert;
+    margin: 10px;
+    float: right;
+    inline-size: -webkit-fill-available;
 }
