@@ -258,11 +258,11 @@ export default function OwnershipForm() {
                 <Form.Control placeholder="Sign Here" />
             </Form.Group>
             <Form.Group controlId="signature">
-                <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>
+                <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>  
                 <Form.Control placeholder="Sign Here" />
             </Form.Group>
-            <Form.Group controlId="signature">
-                <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>
+            <Form.Group controlId="signature"> 
+                <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>  
                 <Form.Control placeholder="Sign Here" />
             </Form.Group>
             <Form.Group controlId="signature">

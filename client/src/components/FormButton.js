@@ -47,9 +47,6 @@ const FormButton = props => {
             <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg" className="OForm">
                   Change of Ownership 
             </Button>
-            <Button  onMouseEnter={showWForm} variant="primary" size="lg" className="WForm">
-                  W9 Form
-            </Button>
         </div>
         <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton} formLink={formLink}/>
     </div> 
