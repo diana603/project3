@@ -5,6 +5,7 @@ import { Container, Row, Button, Col, Jumbotron } from "react-bootstrap";
 import Axios from "axios";
 import Carousel from "../components/BootstrapCarousel";
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 
 
 function Home(props) {
@@ -22,6 +23,7 @@ function Home(props) {
 
   return (
     <Container className="LoginJumbotron" fluid >
+      <Nav />
       <Jumbotron fluid>cd
         <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
       </Jumbotron>
@@ -85,7 +87,6 @@ function Home(props) {
         </Row>
       </Container>
       <Footer />
-
     </Container>
   )
 }

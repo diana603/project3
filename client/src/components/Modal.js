@@ -22,17 +22,11 @@ import ModalStyle from "../pages/assets/modal.css";
             <Modal.Title>{modalTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>{modalInfo}</Modal.Body>
-            <Button onClick={e => {
-                    e.preventDefault();
-                    props.history.push({formLink});
-                  }}>{nextButton}
-            </Button>
-            
-          {/* <Link to="/BeneficiaryForm">
-            <Button onClick={show} variant="primary" size="lg">
-               Change of Beneficiary
-            </Button>
-            </Link> */}
+              <Link to ={formLink}>
+                <Button className="MButton">
+                    {nextButton}
+                </Button>
+              </Link>
       </Modal>
 
 

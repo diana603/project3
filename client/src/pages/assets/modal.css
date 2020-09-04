@@ -1,3 +1,15 @@
-.modal-title.h4 {
-    size: 45px;
+.h4 {
+    font-size: 30px;
+}
+
+.modal-body {
+    font-size: 15px;
+}
+
+.MButton {
+    font-size: 20px;
+    padding: revert;
+    margin: 10px;
+    float: right;
+    inline-size: 150px;
 }

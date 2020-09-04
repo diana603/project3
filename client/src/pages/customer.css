@@ -29,16 +29,23 @@
 }
 
 h2 {
+    padding-top: 2%;
     text-align: center;
+    font-size: 200%;
+
 }
 
 h3 {
     text-align: center;
+    font-size: 100%
 }
 
 .BForm, .OForm, .WForm {
     background-color: black;
+
 }
 
+
 .formBody {
+
 }
