@@ -11,5 +11,5 @@
     padding: revert;
     margin: 10px;
     float: right;
-    inline-size: -webkit-fill-available;
+    inline-size: 150px;
 }
