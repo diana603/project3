@@ -6,6 +6,7 @@ import Axios from "axios";
 import Carousel from "../components/BootstrapCarousel";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import CardHome from "../components/CardHome"
 
 
 function Home(props) {
@@ -24,7 +25,7 @@ function Home(props) {
   return (
     <Container className="LoginJumbotron" fluid >
       <Nav />
-      <Jumbotron fluid>cd
+      <Jumbotron fluid className="insurance">
         <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
       </Jumbotron>
       <Container className="signup">
@@ -33,6 +34,11 @@ function Home(props) {
 
             <Carousel />
 
+            <div className="insurancecard">
+              <CardHome name="Life" Subtitle="When you want to protect them" />
+              <CardHome name="Auto" Subtitle="When you want to protect your car" />
+              <CardHome name="Home" Subtitle="When you want to protect your Home" />
+            </div>
             {isAuth ? (
               <>
                 <Button
