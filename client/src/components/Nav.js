@@ -22,7 +22,7 @@ function NavBar () {
                 </Nav>
                 <Nav>
                     <Nav.Link href="/Login">Login</Nav.Link>
-                    <Nav.Link eventKey={2} href="/Profile">
+                    <Nav.Link eventKey={2} href="/profile">
                         Profile
                     </Nav.Link>
                 </Nav>

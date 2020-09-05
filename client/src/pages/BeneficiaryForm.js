@@ -330,21 +330,20 @@ const BeneficiaryForm = () => {
                         as a beneficiary.
             </p>
                 </div>
-
                 <Form.Group controlId="signature">
                     <Form.Label>Signature of Witness and Date(mmddyyyy) </Form.Label>
                     <Form.Control placeholder="Sign Here" />
                 </Form.Group>
 
-                <div className="beneBtn">
-                    <Button className="gobackBtn" variant="primary">
+        <div className="beneBtn">
+            <Button className="gobackBtn" variant="primary">
                         Go Back
             </Button >
-                    <Button onClick={verifyform} variant="primary">
+             <Button onClick={verifyform} variant="primary">
                         Next
             </Button>
-                </div>
-            </Form>
+        </div>
+    </Form>
         </Container>
     )
 }

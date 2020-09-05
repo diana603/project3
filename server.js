@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Serve static files from the React app build directory
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "/client")));
 
 // Express boilerplate middleware
 // =============================================

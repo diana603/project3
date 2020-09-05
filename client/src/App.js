@@ -48,6 +48,7 @@ function App() {
         />
         <Route exact path="/login" render={props => <LoginForm {...props} />} />
         <Route exact path="/signup" render={props => <Signup {...props} />} />
+        <Route exact path="/profile" component={Profile} />
         <Route exact path="/customer" component={Customer} />
         <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
         <Route exact path="/OwnershipForm" component={OwnershipForm} />
