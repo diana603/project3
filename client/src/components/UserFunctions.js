@@ -30,7 +30,7 @@ export const login = (user) => {
 
 export const getProfile = (user) => {
     return axios
-        .get("/users/profile", {
+        .get("/users/user_data", {
             //headers: { Authorization: ` ${this.getToken()}` }
         })
         .then((response) => {

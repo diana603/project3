@@ -6,7 +6,7 @@ import Signup from "./pages/Signup";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginForm from "./pages/Login";
-import Profile from "./pages/Members";
+import Profile from "./components/Profile";
 import Customer from "./pages/Customer";
 import BeneficiaryForm from "./pages/BeneficiaryForm";
 import OwnershipForm from "./pages/OwnershipForm";
