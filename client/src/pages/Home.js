@@ -36,9 +36,9 @@ function Home(props) {
 
             <div className="insurancecard">
               <CardHome name="Life" Subtitle="When you want to protect them" />
-              <CardHome name="Auto" Subtitle="When you want to protect your car" />
-              <CardHome name="Home" Subtitle="When you want to protect your Home" />
-              <CardHome name="Other" Subtitle="Whatever you want to protect" />
+              <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
+              <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns" />
+              <CardHome name="Other" Subtitle="Whatever you want to protect" link="./other.js" />
               {/* <CardHome name="Other" Subtitle="Whatever you want to protect" /> */}
               {/* <CardHome name="Other" Subtitle="Whatever you want to protect" /> */}
             </div>
@@ -96,7 +96,7 @@ function Home(props) {
         </Row>
       </Container>
       <Footer />
-    </Container>
+    </Container >
   )
 }
 
