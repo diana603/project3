@@ -6,3 +6,4 @@ router.get("/secrets", isAuthenticated, (req, res) => {
 });
 
 module.exports = router;
+

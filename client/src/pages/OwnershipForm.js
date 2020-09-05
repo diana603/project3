@@ -265,14 +265,24 @@ export default function OwnershipForm() {
                 <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>  
                 <Form.Control placeholder="Sign Here" />
             </Form.Group>
-            <Form.Group controlId="signature">
+            <Form.Group controlId="signature">                 
                 <Form.Label>Signature of irrevocable beneficiary (if applicable)(mmddyyyy) </Form.Label>
-                <Form.Control placeholder="Sign Here" />
+                <Form.Control placeholder="Sign Here" />   
             </Form.Group>
             <Form.Group controlId="signature">
                 <Form.Label>Signature of Witness (if applicable) and Date(mmddyyyy) </Form.Label>
                 <Form.Control placeholder="Sign Here" />
             </Form.Group>
+
+            <div className="beneBtn">
+            <Button className="gobackBtn" variant="primary">
+                        Go Back
+            </Button >
+             <Button onClick={verifyform} variant="primary">
+                        Next
+            </Button>
+        </div>
+        
         </Container>
     )
 }
