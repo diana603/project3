@@ -25,11 +25,11 @@ function Home(props) {
   return (
     <Container className="LoginJumbotron" fluid >
       <Nav />
-      <Jumbotron fluid className="insurance">
+      <Jumbotron fluid className="insurance" style={{ padding: 0 }}>
         <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
       </Jumbotron>
       <Container className="signup">
-        <Row>
+        <Row style={{ padding: 0, margin: 0 }}>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
 
             <Carousel />
@@ -38,6 +38,9 @@ function Home(props) {
               <CardHome name="Life" Subtitle="When you want to protect them" />
               <CardHome name="Auto" Subtitle="When you want to protect your car" />
               <CardHome name="Home" Subtitle="When you want to protect your Home" />
+              <CardHome name="Other" Subtitle="Whatever you want to protect" />
+              {/* <CardHome name="Other" Subtitle="Whatever you want to protect" /> */}
+              {/* <CardHome name="Other" Subtitle="Whatever you want to protect" /> */}
             </div>
             {isAuth ? (
               <>
