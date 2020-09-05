@@ -28,6 +28,7 @@ const Members = (props) => {
             className="m-1"
             onClick={() => {
               logout();
+              props.history.push("/");
               setSecret("");
             }}
           >
