@@ -11,6 +11,8 @@ import Customer from "./pages/Customer";
 import BeneficiaryForm from "./pages/BeneficiaryForm";
 import OwnershipForm from "./pages/OwnershipForm";
 import About from "./pages/About";
+import AutoIns from "./pages/AutoIns";
+import HomeIns from "./pages/HomeIns";
 
 
 // Even though this is the App.js file, in the end we are not exactly exporting
@@ -53,7 +55,9 @@ function App() {
         <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
         <Route exact path="/OwnershipForm" component={OwnershipForm} />
         <Route exact path="/About" component={About} />
-        
+        <Route exact path="/HomeIns" component={HomeIns} />
+        <Route exact path="/AutoIns" component={AutoIns} />
+
       </Switch>
     </Router>
   );
