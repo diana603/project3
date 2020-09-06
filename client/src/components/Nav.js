@@ -4,7 +4,7 @@ import NavStyle from "../pages/assets/nav.css"
 
 function NavBar() {
     return (
-        <div className="NavBar">
+        <div className="NavBar" style={{ zIndex: 500 }}>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
