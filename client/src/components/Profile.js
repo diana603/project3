@@ -1,54 +1,62 @@
-import React, { Component } from "react";
-import jwt_decode from "jwt-decode";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../AuthContext";
+import Axios from "axios";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import "../App.css";
 
-class Profile extends Component {
-  constructor() {
-    super();
-    this.state = {
-      first_name: "",
-      last_name: "",
-      email: "",
-      errors: {},
-    };
-  }
+const Profile = (props) => {
+  // Destructure the logout function from AuthContext
+  const { logout } = useContext(AuthContext);
 
-  componentDidMount() {
-    const token = localStorage.usertoken;
-    const decoded = jwt_decode(token);
-    this.setState({
-      first_name: decoded.first_name,
-      last_name: decoded.last_name,
-      email: decoded.email,
-    });
-  }
+  // The secret is just something to demonstrate a placeholder authenticated
+  // api route.
+  const [secret, setSecret] = useState("");
 
-  render() {
-    return (
-      <div className="container">
-        <div className="jumbotron mt-5">
-          <div className="col-sm-8 mx-auto">
-            <h1 className="text-center">PROFILE</h1>
-          </div>
-          <table className="table col-md-6 mx-auto">
-            <tbody>
-              <tr>
-                <td>First Name</td>
-                <td>{this.state.first_name}</td>
-              </tr>
-              <tr>
-                <td>Last Name</td>
-                <td>{this.state.last_name}</td>
-              </tr>
-              <tr>
-                <td>Email</td>
-                <td>{this.state.email}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    );
-  }
-}
+  // this function is duplicated in the Home page component
+  // consider refactor
+  const getSecret = async () => {
+    const secretResponse = await Axios.get("/api/secrets");
+    setSecret(secretResponse.data);
+  };
+
+
+  
+  return (
+    <Container className="signup">
+      <Row>
+        <Col md={{ span: 8, offset: 2 }}>
+          <h1>Members Page</h1>
+
+          
+          <Button
+            className="m-1"
+            onClick={() => {
+              logout();
+              setSecret("");
+            }}
+          >
+            Logout
+          </Button>
+          <Button
+            className="m-1"
+            onClick={() => {
+              props.history.push("/");
+            }}
+          >
+            Home
+          </Button>
+          <Button className="m-1" onClick={getSecret}>
+            Show Secret
+          </Button>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={{ span: 8, offset: 2 }}>
+          <h1>{secret}</h1>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
 export default Profile;
