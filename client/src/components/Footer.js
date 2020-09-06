@@ -29,14 +29,14 @@ export class Footer extends Component {
                 {' '}Diana
               </a>
               ,
-              <a
+              {/* <a
                 class="hover footer-links"
                 href="https://github.com/LynnBoudreau"
                 target="_blank"
               >
                 {' '}Lynn
               </a>
-              ,
+              , */}
               <a
                 class="hover footer-links"
                 href="https://github.com/sehouse"

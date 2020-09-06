@@ -35,7 +35,7 @@ function Home(props) {
             <Carousel />
 
             <div className="insurancecard">
-              <CardHome name="Life" Subtitle="When you want to protect them" />
+              <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns" />
               <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
               <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns" />
               <CardHome name="Other" Subtitle="Whatever you want to protect" link="./other.js" />
