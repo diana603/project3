@@ -8,18 +8,22 @@ function AutoIns() {
   return (
     <>
       <Nav />
+      <Jumbotron className="myJumbotron" fluid>
+        <h1 className="text"> Auto Insurance</h1>
+      </Jumbotron>
       <Container className="inspage">
-        <Jumbotron className="myJumbotron" fluid>
-          <h1 className="text"> Auto Insurance</h1>
-        </Jumbotron>
-        <Col md={{ span: 6 }}>
-          <p>Vehicle insurance (also known as car insurance, motor insurance, or auto insurance) is insurance for cars, trucks, motorcycles, and other road vehicles. Its primary use is to provide financial protection against physical damage or bodily injury resulting from traffic collisions and against liability that could also arise from incidents in a vehicle. Vehicle insurance may additionally offer financial protection against theft of the vehicle, and against damage to the vehicle sustained from events other than traffic collisions, such as keying, weather or natural disasters, and damage sustained by colliding with stationary objects. The specific terms of vehicle insurance vary with legal regulations in each region.</p>
-        </Col>
-        <Col md={{ span: 5 }}>
+        <Row>
+          <Col md={{ span: 5 }}
+            style={{ textAlign: "justify" }}>
 
-          <img src={"../assets/img/car_1920.jpg"} />
+            <p>Vehicle insurance (also known as car insurance, motor insurance, or auto insurance) is insurance for cars, trucks, motorcycles, and other road vehicles. Its primary use is to provide financial protection against physical damage or bodily injury resulting from traffic collisions and against liability that could also arise from incidents in a vehicle.</p> <p>Vehicle insurance may additionally offer financial protection against theft of the vehicle, and against damage to the vehicle sustained from events other than traffic collisions, such as keying, weather or natural disasters, and damage sustained by colliding with stationary objects. The specific terms of vehicle insurance vary with legal regulations in each region.</p>
+          </Col>
+          <Col md={{ span: 7 }}>
 
-        </Col>
+            < img src={'../assets/img/car_1920.jpg'}
+              style={{ height: "450px" }} />;
+</Col>
+        </Row>
       </Container>
       <Footer />
     </>

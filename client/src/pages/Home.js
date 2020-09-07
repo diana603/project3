@@ -36,65 +36,10 @@ function Home(props) {
             <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns" />
             <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
             <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns" />
-            <CardHome name="Other" Subtitle="Whatever you want to protect" link="./other.js" />
-            {/* <CardHome name="Other" Subtitle="Whatever you want to protect" /> */}
-            {/* <CardHome name="Other" Subtitle="Whatever you want to protect" /> */}
+            <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer" />
+
           </div>
-          {/* {isAuth ? (
-            <>
-              <Button
-                className="m-1"
-                onClick={e => {
-                  e.preventDefault();
-                  setSecret('');
-                  logout();
-                }}
-              >
-                Logout
-              </Button>
-              <Button
-                className="m-1"
-                onClick={e => {
-                  e.preventDefault();
-                  props.history.push("/profile");
-                }}
-              >
-                Members
-              </Button>
-            </>
-          ) : (
-              <>
-                <Button
-                  className="m-1"
-                  onClick={e => {
-                    e.preventDefault();
-                    props.history.push("/login");
-                  }}
-                >
-                  Login
-              </Button>
-                <Button
-                  className="m-1"
-                  onClick={e => {
-                    e.preventDefault();
-                    props.history.push("/signup");
-                  }}
-                >
-                  Signup
-              </Button>
-              </>
-            )} */}
-          {/* <Row style={{ padding: 0, margin: 0 }}>
-            <Col className="intro" md={{ span: 8, }}>
 
-
-            </Col>
-          </Row> */}
-          {/* <Row>
-            <Col md={{ span: 8, offset: 2 }}>
-              <h1>{secret}</h1>
-            </Col>
-          </Row> */}
         </Container>
       </Container >
       <Footer />
