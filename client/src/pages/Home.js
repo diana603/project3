@@ -26,14 +26,14 @@ function Home(props) {
     <>
       <Nav />
       <Container className="LoginJumbotron" fluid >
-        <Jumbotron fluid className="insurance" style={{ padding: 0 }}>
+        <Jumbotron fluid className="insurancejumbo" style={{ padding: 0 }}>
           <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
         </Jumbotron>
-        <Container className="signup">
+        <Container>
           <Carousel />
 
-
         </Container>
+
         <div className="insurancecard">
           <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns" />
           <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
@@ -41,6 +41,7 @@ function Home(props) {
           <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer" />
           <CardHome name="Insurance" Subtitle="FAQs about Insurance" link="./Faqs" />
         </div>
+
       </Container >
       <Footer />
     </>

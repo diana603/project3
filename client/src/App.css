@@ -1,9 +1,5 @@
-.signup {
-  /* padding-top: 10px; */
-}
-
 .LoginJumbotron {
-  background-color: #007BFF !important ;
+  background-color: #007BFF !important;
 }
 
 .m-1 {
@@ -44,15 +40,12 @@ footer {
 }
 
 .insurancecard {
-  height: 100vh;
+  height: 75vh;
   background: #007bff4d;
-  display: inline-flexbox;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: auto;
-  padding: auto;
 }
 
 .carousel {
