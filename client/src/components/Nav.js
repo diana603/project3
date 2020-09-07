@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <div className="NavBar" style={{ zIndex: 500 }}>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="/">East Coast Insurance</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
@@ -17,7 +17,7 @@ function NavBar() {
                             <NavDropdown.Item href="/HomeIns">Home</NavDropdown.Item>
                             <NavDropdown.Item href="/LifeIns">Life</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            <NavDropdown.Item href="/Faqs">FAQ</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
