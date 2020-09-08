@@ -10,9 +10,9 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/Customer">Update Forms</Nav.Link>
                     <Nav.Link href="/Quote">Get a Quote</Nav.Link>
-                    <NavDropdown title="Insurance" id="collasible-nav-dropdown">
+                    <Nav.Link href="/Customer">Update Existing Forms</Nav.Link>
+                    <NavDropdown title="Insurances Offered" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/AutoIns">Auto</NavDropdown.Item>
                         <NavDropdown.Item href="/HomeIns">Home</NavDropdown.Item>
                         <NavDropdown.Item href="/LifeIns">Life</NavDropdown.Item>
