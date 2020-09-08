@@ -8,10 +8,9 @@ export class BootstrapCarousel extends Component {
 
       < div >
         < div className='container-fluid' >
-          < Carousel >
-            < Carousel.Item style={{ 'height': "600px" }} >
-              < img style={{ 'height': "600px" }}
-
+          < Carousel style={{ padding: 0, margin: '0px auto' }}>
+            < Carousel.Item >
+              < img
                 className="d-block w-100"
                 src={'../assets/img/family_1920.jpg'} />
 
