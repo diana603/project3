@@ -11,6 +11,7 @@ import Customer from "./pages/Customer";
 import BeneficiaryForm from "./pages/BeneficiaryForm";
 import OwnershipForm from "./pages/OwnershipForm";
 import About from "./pages/About";
+import Quote from "./pages/Quote";
 
 
 // Even though this is the App.js file, in the end we are not exactly exporting
@@ -52,6 +53,8 @@ function App() {
         <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
         <Route exact path="/OwnershipForm" component={OwnershipForm} />
         <Route exact path="/About" component={About} />
+      <Route exact path="/Quote" component={Quote} />
+
         
       </Switch>
     </Router>
