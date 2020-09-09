@@ -15,17 +15,12 @@ function LifeIns() {
           <Col md={{ span: 5 }}
             style={{ textAlign: "justify" }}>
 
-            <p>What is life insurance?
-Life insurance policies provide beneficiaries with lump-sum payments when the insured party passes away or after a specific period of time has passed. Life insurance provides financial security by replacing lost income and covering expenses.</p>
+            <p>Life insurance is a contract between an insurance policy holder and an insurer or assurer, where the insurer promises to pay a designated beneficiary a sum of money (the benefit) in exchange for a premium, upon the death of an insured person (often the policy holder). Depending on the contract, other events such as terminal illness or critical illness can also trigger payment. The policy holder typically pays a premium, either regularly or as one lump sum. Other expenses, such as funeral expenses, can also be included in the benefits.</p>
 
-            <p>Why do I need life insurance?
-        There's no replacement for you and the contribution you make to your family. You want to make sure that people in your life, especially your dependents, can remain financially secure after you die.</p>
+            <p>Life policies are legal contracts and the terms of the contract describe the limitations of the insured events. Specific exclusions are often written into the contract to limit the liability of the insurer; common examples are claims relating to suicide, fraud, war, riot, and civil commotion.</p>
 
-            <p>That's what life insurance does for you and your loved ones. It gives you peace of mind. Income replacement is the #1 reason why people buy life insurance. Stay-at-home moms or dads also have an important, often overlooked, economic value that should be covered by life insurance.</p>
+            <p style={{ textAlign: "right" }}><cite>Definition by Wikipedia</cite> </p>
 
-            <p>Life insurance is also used to achieve specific business or estate planning goals.
-
-        Bottom line: life insurance financially protects your family and loved ones at a time when it is needed the most.</p>
           </Col>
 
           <Col md={{ span: 7 }}>
