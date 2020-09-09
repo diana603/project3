@@ -18,6 +18,7 @@ function NavBar() {
                         <NavDropdown.Item href="/LifeIns">Life</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Boat</NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.3">Motorcycle</NavDropdown.Item>
+                        <NavDropdown.Item href="/Faqs">FAQ</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Nav>

@@ -32,15 +32,15 @@ function Home(props) {
         <Container className="signup">
           <Carousel />
 
-          <div className="insurancecard">
-            <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns" />
-            <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
-            <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns" />
-            <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer" />
-
-          </div>
 
         </Container>
+        <div className="insurancecard">
+          <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns" />
+          <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
+          <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns" />
+          <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer" />
+          <CardHome name="Insurance" Subtitle="FAQs about Insurance" link="./Faqs" />
+        </div>
       </Container >
       <Footer />
     </>
