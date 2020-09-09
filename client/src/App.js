@@ -15,6 +15,7 @@ import Quote from "./pages/Quote";
 import AutoIns from "./pages/AutoIns";
 import HomeIns from "./pages/HomeIns";
 import LifeIns from "./pages/LifeIns";
+import Faqs from "./pages/Faqs"
 
 // Even though this is the App.js file, in the end we are not exactly exporting
 // the App component.  We actually set up the app component to implement our react
@@ -60,6 +61,7 @@ function App() {
         <Route exact path="/HomeIns" component={HomeIns} />
         <Route exact path="/AutoIns" component={AutoIns} />
         <Route exact path="/LifeIns" component={LifeIns} />
+        <Route exact path="/Faqs" component={Faqs} />
 
       </Switch>
     </Router>
