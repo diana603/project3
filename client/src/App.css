@@ -83,7 +83,7 @@ footer {
 }
 
 
-.autoQuote, .lifeQuote {
+.autoQuote, .lifeQuote, .cycleQuote {
   font-size: 50px;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
@@ -96,7 +96,7 @@ footer {
   color: #007BFF;
   text-decoration: none;
 }
-.homeQuote {
+.homeQuote, .boatQuote {
   font-size: 50px;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
