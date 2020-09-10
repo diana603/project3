@@ -6,7 +6,6 @@ import Signup from "./pages/Signup";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginForm from "./pages/Login";
-import Profile from "./components/Profile";
 import Customer from "./pages/Customer";
 import BeneficiaryForm from "./pages/BeneficiaryForm";
 import OwnershipForm from "./pages/OwnershipForm";
@@ -52,7 +51,6 @@ function App() {
         />
         <Route exact path="/login" render={props => <LoginForm {...props} />} />
         <Route exact path="/signup" render={props => <Signup {...props} />} />
-        <Route exact path="/profile" component={Profile} />
         <Route exact path="/customer" component={Customer} />
         <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
         <Route exact path="/OwnershipForm" component={OwnershipForm} />
