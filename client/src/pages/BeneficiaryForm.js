@@ -2,20 +2,47 @@ import React, { useState } from 'react';
 import customer from './customer.css';
 import { states } from "./states";
 import { Form, Col, Button, Container } from 'react-bootstrap/'
+// import Axios from "axios";
+
 
 const BeneficiaryForm = () => {
     const [state, setState] = useState("");
+    const [policyNumber, setPolicyNumber] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState(""); 
+    const [address, setAddress] = useState(""); 
 
     const handleStateChange = (e) => {
         console.log(e.target.value)
         setState(e.target.value)
     }
 
-    const verifyform = () => {
+    const verifyForm = (event) => {
+
+        event.preventDefault();
+        const form = event.currentTarget;
+        console.log(form);
         if (!state || state === "Select State") {
             alert("Please Enter Address")
         } else if (state === "MA") {
             alert("Please Note in the State of MA your signature must be witnessed by a disinterested third party")
+        }
+        else {
+            console.log("formverified");
+            console.log(policyNumber);
+            console.log(firstName);
+            console.log(lastName);
+            console.log(address); 
+            // axios.get('/user?ID=12345')
+                // .then(function (response) {
+                //     // handle success
+                //     console.log(response);
+                // })
+                // .catch(function (error) {
+                //     // handle error
+                //     console.log(error);
+                // })
+                
         }
     }
     return (
@@ -24,27 +51,27 @@ const BeneficiaryForm = () => {
                 <p> East Coast Life Insurance </p>
                 <p> Change of Beneficiary Form </p>
             </div>
-            <Form>
+            <Form onSubmit={event => verifyForm(event)}>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
                         <Form.Label>Policy Number(s) </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter Policy Number" />
+                        <Form.Control type="Policy Number " placeholder="Enter Policy Number" onChange={number => setPolicyNumber(number.target.value)} />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>First Name </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Name" />
+                        <Form.Control type="Name" placeholder="Enter Name" onChange={e => setFirstName(e.target.value)} />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Name" />
+                        <Form.Control type="Name" placeholder="Enter Name" onChange={e => setLastName(e.target.value)} />
                     </Form.Group>
                 </Form.Row>
 
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="1234 Main St" />
+                    <Form.Control placeholder="Enter Address" onChange={e => setAddress(e.target.value)} />
                 </Form.Group>
 
                 <Form.Group controlId="formGridAddress2">
@@ -335,15 +362,15 @@ const BeneficiaryForm = () => {
                     <Form.Control placeholder="Sign Here" />
                 </Form.Group>
 
-        <div className="beneBtn">
-            <Button className="gobackBtn" variant="primary">
+                <div className="beneBtn">
+                    <Button className="gobackBtn" variant="primary">
                         Go Back
             </Button >
-             <Button onClick={verifyform} variant="primary">
-                        Next
+                    <Button type="submit" variant="primary">
+                        Submit
             </Button>
-        </div>
-    </Form>
+                </div>
+            </Form>
         </Container>
     )
 }
