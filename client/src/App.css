@@ -16,19 +16,26 @@
 h1.pageHeader {
   margin: 2px;
   color: aliceblue;
-  font-size: 50px
+  font-size: 50px;
+  
 }
 
 .insurance {
   text-align: center;
   color: white;
-  font-family: 'Alata', sans-serif; 
+  font-family: 'Playfair Display', serif;
   font-size: 55px;
   background-color: #007BFF !important;
 }
 
 footer {
   text-align-last: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.LoginJumbotron.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .cardsHome {
@@ -65,4 +72,27 @@ footer {
   display: table;
   margin: 0px, 1px;
   align-self: start;
+}
+
+
+.autoQuote, .lifeQuote, .cycleQuote {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  float: left;
+}
+
+.autoQuote:hover, .homeQuote:hover, .lifeQuote:hover {
+  color: #007BFF;
+  text-decoration: none;
+}
+.homeQuote, .boatQuote {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  float: right;
 }
