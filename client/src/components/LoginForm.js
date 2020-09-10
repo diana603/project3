@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { AuthContext } from "../AuthContext";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import { Form, Button, Container } from "react-bootstrap";
 import Axios from "axios";
+import User from "../pages/assets/user.css";
 
 const LoginForm = (props) => {
   const { setIsAuth } = useContext(AuthContext);
@@ -40,6 +40,7 @@ const LoginForm = (props) => {
   };
 
   return (
+    <Container>
     <Form onSubmit={handleFormSubmit}>
       <Form.Group controlId="emailInput">
         <Form.Label>Email address</Form.Label>
@@ -86,6 +87,7 @@ const LoginForm = (props) => {
         Home
       </Button>
     </Form>
+    </Container>
   );
 };
 
