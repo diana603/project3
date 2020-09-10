@@ -1,11 +1,10 @@
 .signup {
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
-
 
 .LoginJumbotron {
   background-color: #007BFF !important ;
-  padding-top: 2rem;
+  
 }
 
 .m-1 {
@@ -22,15 +21,86 @@
 h1.pageHeader {
   margin: 2px;
   color: aliceblue;
-  font-size: 50px
+  font-size: 50px;
+  
 }
 
 .insurance {
   text-align: center;
-  color: white; 
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 55px;
+  background-color: #007BFF !important;
 }
 
 footer {
   text-align-last: center;
+  font-family: 'Playfair Display', serif;
 }
 
+.LoginJumbotron.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.cardsHome {
+  height: 150px;
+  width: 150px;
+  background: #007bff42;
+  border-radius: 30px;
+  display: flex;
+}
+
+.insurancecard {
+  height: 100vh;
+  background: #007bff4d;
+  display: inline-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+.carousel {
+  width: 900px;
+  height: 500px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+}
+
+.row {
+  display: table;
+  margin: 0px, 1px;
+  align-self: start;
+}
+
+
+.autoQuote, .lifeQuote, .cycleQuote {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  float: left;
+}
+
+.autoQuote:hover, .homeQuote:hover, .lifeQuote:hover {
+  color: #007BFF;
+  text-decoration: none;
+}
+.homeQuote, .boatQuote {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  float: right;
+}

@@ -1,31 +1,32 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown} from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import NavStyle from "../pages/assets/nav.css"
 
-function NavBar () {
+function NavBar() {
     return (
-        <div className="NavBar">
+        <div className="NavBar" style={{ zIndex: 500 }}>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="/">East Coast Insurance</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/Customer">Customer Forms</Nav.Link>
-                    <Nav.Link href="/About">About ECI</Nav.Link>
-                    <NavDropdown title="Insurance" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Auto</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Home</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Life</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <Nav.Link href="/Quote">Get a Quote</Nav.Link>
+                    <Nav.Link href="/Customer">Update Existing Forms</Nav.Link>
+                    <NavDropdown title="Insurances Offered" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/AutoIns">Auto</NavDropdown.Item>
+                        <NavDropdown.Item href="/HomeIns">Home</NavDropdown.Item>
+                        <NavDropdown.Item href="/LifeIns">Life</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Boat</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Motorcycle</NavDropdown.Item>
+                        <NavDropdown.Item href="/Faqs">FAQ</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Nav>
                     <Nav.Link href="/Login">Login</Nav.Link>
-                    <Nav.Link eventKey={2} href="/Profile">
-                        Profile
+                    <Nav.Link eventKey={2} href="/About">
+                        About Us
                     </Nav.Link>
-                </Nav>
+                    </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </div>

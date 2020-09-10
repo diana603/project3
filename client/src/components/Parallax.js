@@ -8,7 +8,7 @@ const MyComponent = () => (
         <Parallax
             // blur={{ min: -15, max: 15 }}
             bgImage={require('../pages/images/second.jpg')}
-            bgImageAlt="the dog"
+            bgImageAlt="formimg"
             strength={-200}
         >
         <FormButton />
