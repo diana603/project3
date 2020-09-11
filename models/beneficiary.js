@@ -31,7 +31,6 @@ module.exports = function (sequelize, DataTypes) {
             unique: false,
         }
 
-
     })
     return Beneficiary;
 

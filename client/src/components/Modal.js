@@ -34,8 +34,6 @@ import ModalStyle from "../pages/assets/modal.css";
   );
 }
 
-//  render(<Example />);
-
 export default ModalView;
 
 
