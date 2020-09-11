@@ -12,7 +12,7 @@ function NavBar() {
                 <Nav className="mr-auto">
                     <Nav.Link href="/Quote">Get a Quote</Nav.Link>
                     <Nav.Link href="/Customer">Update Existing Forms</Nav.Link>
-                    <NavDropdown title="Insurances Offered" id="collasible-nav-dropdown">
+                    <NavDropdown title="Insurance Info" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/AutoIns">Auto</NavDropdown.Item>
                         <NavDropdown.Item href="/HomeIns">Home</NavDropdown.Item>
                         <NavDropdown.Item href="/LifeIns">Life</NavDropdown.Item>
@@ -20,6 +20,7 @@ function NavBar() {
                         <NavDropdown.Item href="#action/3.3">Motorcycle</NavDropdown.Item>
                         <NavDropdown.Item href="/Faqs">FAQ</NavDropdown.Item>
                     </NavDropdown>
+                    <Nav.Link href="https://www.bankrate.com/calculators/insurance/life-insurance-calculator.aspx">Life Insurance Calculator</Nav.Link>
                 </Nav>
                 <Nav>
                     <Nav.Link href="/Login">Login</Nav.Link>

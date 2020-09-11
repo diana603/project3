@@ -35,19 +35,18 @@ const FormButton = props => {
         setShow(true)
     };
 
-
     return (
     <div className="formBody">
-         <h2>Please Select The Form You Would Like to Complete</h2>
-         <h3>Tip: For details on each form, hover over the corresponding button.</h3>
+        <h2>Please Select The Form You Would Like to Complete</h2>
+        <h3>Tip: For details on each form, hover over the corresponding button.</h3>
         <div className="formbtn">
             <Link to="/BeneficiaryForm">
-            <Button onMouseEnter={showBeneficiaryForm} variant="primary" size="lg" className="BForm">
-               Change of Beneficiary
-            </Button>
+                <Button onMouseEnter={showBeneficiaryForm} variant="primary" size="lg" className="BForm">
+                    Change of Beneficiary
+                </Button>
             </Link>
             <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg" className="OForm">
-                  Change of Ownership 
+                Change of Ownership 
             </Button>
         </div>
         <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton} formLink={formLink}/>
