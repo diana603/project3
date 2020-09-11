@@ -82,6 +82,7 @@ footer {
   color: white;
   text-align: center;
   float: left;
+  padding-left: 150px;
 }
 
 .autoQuote:hover, .homeQuote:hover, .lifeQuote:hover {
@@ -95,4 +96,27 @@ footer {
   color: white;
   text-align: center;
   float: right;
+  padding-right: 150px;
+}
+
+.h1, h1 {
+  color: red;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.firstP{
+  margin-top: 20px;
+}
+
+.JQuote.jumbotron {
+  background-color: #007BFF;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  padding: inherit;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
 }
