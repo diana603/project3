@@ -2,15 +2,19 @@ import React, { useState } from 'react';
 import customer from './customer.css';
 import { states } from "./states";
 import { Form, Col, Button, Container } from 'react-bootstrap/'
-// import Axios from "axios";
+import axios from "axios";
 
 
 const BeneficiaryForm = () => {
-    const [state, setState] = useState("");
     const [policyNumber, setPolicyNumber] = useState("");
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState(""); 
     const [address, setAddress] = useState(""); 
+    const [addressTwo, setAddressTwo] = useState(""); 
+    const [city, setCity] = useState(""); 
+    const [state, setState] = useState("");
+    const [zip, setZip] = useState(""); 
+    const [primaryBeneficiary, setPrimaryBeneficiary] = useState("");
 
     const handleStateChange = (e) => {
         console.log(e.target.value)
@@ -33,15 +37,19 @@ const BeneficiaryForm = () => {
             console.log(firstName);
             console.log(lastName);
             console.log(address); 
-            // axios.get('/user?ID=12345')
-                // .then(function (response) {
-                //     // handle success
-                //     console.log(response);
-                // })
-                // .catch(function (error) {
-                //     // handle error
-                //     console.log(error);
-                // })
+            console.log(addressTwo);
+            console.log(city);
+            console.log(zip);
+            console.log(primaryBeneficiary);
+            axios.get('/form/changeofbeneficairy',)
+                .then(function (response) {
+                    // handle success
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
                 
         }
     }
@@ -76,13 +84,13 @@ const BeneficiaryForm = () => {
 
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Apartment, studio, or floor" />
+                    <Form.Control placeholder="Enter Address" onChange={e => setAddressTwo(e.target.value)}  />
                 </Form.Group>
 
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
-                        <Form.Control />
+                        <Form.Control onChange={e => setCity(e.target.value)} />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridState">
@@ -98,7 +106,7 @@ const BeneficiaryForm = () => {
 
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
-                        <Form.Control />
+                        <Form.Control onChange={e => setZip(e.target.value)} />
                     </Form.Group>
                 </Form.Row>
 
@@ -122,7 +130,7 @@ const BeneficiaryForm = () => {
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
                         <Form.Label>(1)Primary Beneficiary First Name </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter First Name" />
+                        <Form.Control type="Policy Number " placeholder="Enter First Name" onChange={e => setPrimaryBeneficiary(e.target.value)} />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
