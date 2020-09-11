@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
+import { Form, Button } from 'react-bootstrap/';
 import Axios from 'axios';
 import User from "../pages/assets/user.css";
 import Nav from "../components/Nav";
@@ -82,25 +81,24 @@ const Signup = props => {
 
   return (
     <>
-    <Nav />
     <Form onSubmit={handleFormSubmit}>
       <Form.Group controlId="inputFirstName">
-        <Form.Label className={firstNameColor}>First Name</Form.Label>
-        <Form.Control name="firstNameInput" type="text" placeholder="" value={formData.firstNameInput} onChange={handleInputChange} />
+        <Form.Label className={firstNameColor} className="loginInput" >First Name</Form.Label>
+        <Form.Control name="firstNameInput" className="loginInput" type="text" placeholder="" value={formData.firstNameInput} onChange={handleInputChange} />
       </Form.Group>
       <Form.Group controlId="inputLastName">
-        <Form.Label className={lastNameColor}>Last Name</Form.Label>
-        <Form.Control name="lastNameInput" type="text" placeholder="" value={formData.lastNameInput} onChange={handleInputChange} />
+        <Form.Label className={lastNameColor} className="loginInput">Last Name</Form.Label>
+        <Form.Control name="lastNameInput" className="loginInput" type="text" placeholder="" value={formData.lastNameInput} onChange={handleInputChange} />
       </Form.Group>
       <Form.Group controlId="emailInput">
-        <Form.Label className={emailColor}>Email Address</Form.Label>
-        <Form.Control name="emailInput" type="email" placeholder="Enter email" value={formData.emailInput} onChange={handleInputChange} />
+        <Form.Label className={emailColor} className="loginInput">Email Address</Form.Label>
+        <Form.Control name="emailInput" className="loginInput" type="email" placeholder="Enter email" value={formData.emailInput} onChange={handleInputChange} />
         <Form.Text className="text-muted">
                 </Form.Text>
       </Form.Group>
       <Form.Group controlId="inputPassword">
-        <Form.Label className={passwordColor}>Password</Form.Label>
-        <Form.Control name="passwordInput" type="password" placeholder="Password" value={formData.passwordInput} onChange={handleInputChange} />
+        <Form.Label className={passwordColor} className="loginInput">Password</Form.Label>
+        <Form.Control name="passwordInput" className="loginInput" type="password" placeholder="Password" value={formData.passwordInput} onChange={handleInputChange} />
       </Form.Group>
       <Form.Group>
         <Form.Text className="text-danger">
