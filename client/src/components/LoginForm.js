@@ -45,7 +45,7 @@ const LoginForm = (props) => {
 
   return (
     <>
-    <Nav />
+ 
     <Form onSubmit={handleFormSubmit} className="LForm" >
       <Form.Group controlId="emailInput">
         <Form.Label>Email Address</Form.Label>

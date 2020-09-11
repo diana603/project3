@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import customer from './customer.css';
 import { states } from "./states";
-import { Form, Col, Button, Container } from 'react-bootstrap/'
+import { Form, Col, Button, Container } from 'react-bootstrap/';
+import Nav from "../components/Nav";
 import axios from "axios";
-
 
 const BeneficiaryForm = () => {
     const [policyNumber, setPolicyNumber] = useState("");
@@ -54,6 +54,8 @@ const BeneficiaryForm = () => {
         }
     }
     return (
+        <>
+        <Nav />
         <Container className="beneForm">
             <div className="introSentence">
                 <p> East Coast Life Insurance </p>
@@ -380,6 +382,7 @@ const BeneficiaryForm = () => {
                 </div>
             </Form>
         </Container>
+    </>
     )
 }
 export default BeneficiaryForm; 
