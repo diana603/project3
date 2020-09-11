@@ -12,7 +12,8 @@ export class BootstrapCarousel extends Component {
             < Carousel.Item >
               < img
                 className="d-block w-100"
-                src={'../assets/img/family_1920.jpg'} />
+                src={'../assets/img/family_1920.jpg'}
+                alt={"image of a family"} />
 
               < Carousel.Caption style={{ "text-color": 'black' }}>
                 < h3 > For all the little moments in life, Life Insurance is the key to protect them </h3 >
@@ -25,7 +26,8 @@ export class BootstrapCarousel extends Component {
               <img
                 style={{ height: "600px" }}
                 className="d-block w-100"
-                src={'../assets/img/fiat.jpg'} />
+                src={'../assets/img/fiat.jpg'}
+                alt={"old fiat in an autumn day"} />
 
               < Carousel.Caption >
 
@@ -37,8 +39,8 @@ export class BootstrapCarousel extends Component {
               < img style={{ 'height': "600px" }}
 
                 className="d-block w-100"
-
-                src={'../assets/img/home.jpg'} />
+                src={'../assets/img/home.jpg'}
+                alt={"house covered by ivy"} />
 
               < Carousel.Caption >
 
@@ -51,8 +53,8 @@ export class BootstrapCarousel extends Component {
               < img style={{ 'height': "600px" }}
 
                 className="d-block w-100"
-
-                src={'../assets/img/panorama_1920.jpg'} />
+                src={'../assets/img/panorama_1920.jpg'}
+                alt={"family on top of a mountain"} />
 
               < Carousel.Caption >
 
@@ -64,8 +66,8 @@ export class BootstrapCarousel extends Component {
               < img style={{ 'height': "600px" }}
 
                 className="d-block w-100"
-
-                src={'../assets/img/pair_1920.jpg'} />
+                src={'../assets/img/pair_1920.jpg'}
+                alt={"couple in the woods"} />
 
               < Carousel.Caption >
 
@@ -78,7 +80,8 @@ export class BootstrapCarousel extends Component {
 
                 className="d-block w-100"
 
-                src={'../assets/img/sunset_1920.jpg'} />
+                src={'../assets/img/sunset_1920.jpg'}
+                alt={"kids jumping on the sunset at the beach"} />
 
               < Carousel.Caption >
 

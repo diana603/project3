@@ -47,11 +47,11 @@ footer {
 }
 
 .insurancecard {
-  height: 75vh;
+  height: 60vh;
   background: #007bff4d;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
