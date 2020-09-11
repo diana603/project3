@@ -4,10 +4,8 @@ import Button from 'react-bootstrap/Button'
 import Axios from 'axios';
 
 const Signup = props => {
-
   const emptyUser = { firstNameInput: '', lastNameInput: '', emailInput: '', passwordInput: '' }
   const errorMessage = 'invalid credentials'
-
   const [formData, setFormData] = useState(emptyUser)
   const [credsAreInvalid, setCredsAreInvalid] = useState('')
   const [firstNameColor, setFirstNameColor] = useState('')
@@ -24,9 +22,6 @@ const Signup = props => {
   const handleFormSubmit = event => {
     event.preventDefault()
 
-    // TODO: investigate handleFormSubmit refactor
-    // Is it necessary to set a static object here just to post the user?
-    // can the formData state be validated and posted directly?
     let newUser = {
       firstName: formData.firstNameInput,
       lastName: formData.lastNameInput,
@@ -41,8 +36,6 @@ const Signup = props => {
     }
   }
 
-  // validateUserInput checks the formData for any missing values and 
-  // then highlights the fields that are invalid
   const validateUserInput = ({ firstName, lastName, email, password }) => {
     let isValid = true;
 
@@ -100,7 +93,7 @@ const Signup = props => {
         <Form.Control name="emailInput" type="email" placeholder="Enter email" value={formData.emailInput} onChange={handleInputChange} />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
-                </Form.Text>
+        </Form.Text>
       </Form.Group>
       <Form.Group controlId="inputPassword">
         <Form.Label className={passwordColor}>Password</Form.Label>

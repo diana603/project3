@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 
 export class Footer extends Component {
@@ -20,7 +19,7 @@ export class Footer extends Component {
               class="hover footer-links"
               href="https://github.com/lalaggv2"
               target="_blank"
-            >
+              >
               {' '}Angela
               </a>
               ,
@@ -28,7 +27,7 @@ export class Footer extends Component {
               class="hover footer-links"
               href="https://github.com/diana603"
               target="_blank"
-            >
+              >
               {' '}Diana
               </a>
               ,
@@ -40,18 +39,18 @@ export class Footer extends Component {
                 {' '}Lynn
               </a>
               , */}
-            <a
+              <a
               class="hover footer-links"
               href="https://github.com/sehouse"
               target="_blank"
-            >
+              >
               {' '}Scott
               </a>,
               <a
               class="hover footer-links"
               href="https://github.com/shannontrainor"
               target="_blank"
-            >
+              >
               {' '}Shannon
               </a>
           </h5>
