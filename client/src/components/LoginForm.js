@@ -3,11 +3,15 @@ import { AuthContext } from "../AuthContext";
 import { Form, Button, Container } from "react-bootstrap";
 import Axios from "axios";
 import User from "../pages/assets/user.css";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import {Link} from "react-router-dom";
+
 
 const LoginForm = (props) => {
   const { setIsAuth } = useContext(AuthContext);
   const emptyCreds = { emailInput: "", passwordInput: "" };
-  const errorMessage = "invalid credentials";
+  const errorMessage = "Please Fill In All Sections";
   const [formData, setFormData] = useState(emptyCreds);
   const [credsAreInvalid, setCredsAreInvalid] = useState("");
 
@@ -40,10 +44,11 @@ const LoginForm = (props) => {
   };
 
   return (
-    <Container>
-    <Form onSubmit={handleFormSubmit}>
+    <>
+    <Nav />
+    <Form onSubmit={handleFormSubmit} className="LForm" >
       <Form.Group controlId="emailInput">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Email Address</Form.Label>
         <Form.Control
           name="emailInput"
           type="email"
@@ -66,28 +71,13 @@ const LoginForm = (props) => {
         <Form.Text className="text-danger">{credsAreInvalid}</Form.Text>
       </Form.Group>
       <Button className="m-1" variant="primary" type="submit">
-        Submit
+        Login
       </Button>
-      <Button
-        className="m-1"
-        onClick={(e) => {
-          e.preventDefault();
-          props.history.push("/signup");
-        }}
-      >
-        Signup
-      </Button>
-      <Button
-        className="m-1"
-        onClick={(e) => {
-          e.preventDefault();
-          props.history.push("/");
-        }}
-      >
-        Home
-      </Button>
+      <Link to="/signUp" className="signLink">Not a Member? Sign Up!</Link>
     </Form>
-    </Container>
+
+    </>
+
   );
 };
 
