@@ -99,12 +99,6 @@ footer {
   padding-right: 150px;
 }
 
-.h1, h1 {
-  color: red;
-  padding-top: 15px;
-  text-align: center;
-}
-
 .firstP{
   margin-top: 20px;
 }
@@ -119,4 +113,17 @@ footer {
   padding-top: 20px;
   color: white;
   text-align: center;
+}
+
+.LoginPage.jumbotron {
+  background-color: #007BFF;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  padding: inherit;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+
 }
