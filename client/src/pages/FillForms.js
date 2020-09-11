@@ -11,14 +11,6 @@ function Home(props) {
 
   const [secret, setSecret] = useState("");
 
-  // // this function is duplicated in the Members page component
-  // // consider refactor 
-  // const getSecret = async () => {
-  //   const secretResponse = await Axios.get("/api/secrets");
-  //   console.log(secretResponse.data);
-  //   setSecret(secretResponse.data);
-  // };
-
   return (
     <Jumbotron className="LoginJumbotron" fluid >
       <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
