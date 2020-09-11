@@ -48,7 +48,7 @@ const LoginForm = (props) => {
  
     <Form onSubmit={handleFormSubmit} className="LForm" >
       <Form.Group controlId="emailInput">
-        <Form.Label>Email Address</Form.Label>
+        <Form.Label className="loginInput">Email Address</Form.Label>
         <Form.Control
           name="emailInput"
           type="email"
@@ -58,7 +58,7 @@ const LoginForm = (props) => {
         />
       </Form.Group>
       <Form.Group controlId="inputPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label className="loginInput">Password</Form.Label>
         <Form.Control
           name="passwordInput"
           type="password"
