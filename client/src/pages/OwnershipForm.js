@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import customer from './customer.css';
 import { states } from "./states";
-import { Form, Col, Button, Container } from 'react-bootstrap/'
+import { Form, Col, Button, Container } from 'react-bootstrap/';
+import Nav from "../components/Nav";
+
 
 export default function OwnershipForm() {
     const [state, setState] = useState("");
@@ -19,6 +21,8 @@ export default function OwnershipForm() {
         }
     }
     return (
+        <>
+        <Nav />
         <Container className="beneForm">
             <div className="introSentence">
                 <p> East Coast Life Insurance </p>
@@ -284,5 +288,6 @@ export default function OwnershipForm() {
         </div>
         
         </Container>
+        </>
     )
 }
