@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 import Axios from 'axios';
+import User from "../pages/assets/user.css";
+import Nav from "../components/Nav";
 
 const Signup = props => {
 
   const emptyUser = { firstNameInput: '', lastNameInput: '', emailInput: '', passwordInput: '' }
-  const errorMessage = 'invalid credentials'
+  const errorMessage = 'Please Fill In All Sections'
 
   const [formData, setFormData] = useState(emptyUser)
   const [credsAreInvalid, setCredsAreInvalid] = useState('')
@@ -86,20 +88,21 @@ const Signup = props => {
   }
 
   return (
+    <>
+    <Nav />
     <Form onSubmit={handleFormSubmit}>
       <Form.Group controlId="inputFirstName">
-        <Form.Label className={firstNameColor}>FirstName</Form.Label>
+        <Form.Label className={firstNameColor}>First Name</Form.Label>
         <Form.Control name="firstNameInput" type="text" placeholder="" value={formData.firstNameInput} onChange={handleInputChange} />
       </Form.Group>
       <Form.Group controlId="inputLastName">
-        <Form.Label className={lastNameColor}>LastName</Form.Label>
+        <Form.Label className={lastNameColor}>Last Name</Form.Label>
         <Form.Control name="lastNameInput" type="text" placeholder="" value={formData.lastNameInput} onChange={handleInputChange} />
       </Form.Group>
       <Form.Group controlId="emailInput">
-        <Form.Label className={emailColor}>Email address</Form.Label>
+        <Form.Label className={emailColor}>Email Address</Form.Label>
         <Form.Control name="emailInput" type="email" placeholder="Enter email" value={formData.emailInput} onChange={handleInputChange} />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
                 </Form.Text>
       </Form.Group>
       <Form.Group controlId="inputPassword">
@@ -111,14 +114,11 @@ const Signup = props => {
           {credsAreInvalid}
         </Form.Text>
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-            </Button>
-      <Button className='m-1' onClick={e => {
-        e.preventDefault();
-        props.history.push('/')
-      }}>Home</Button>
+      <Button variant="primary" type="submit" className="m-1">
+        Sign Up
+      </Button>
     </Form>
+    </>
   )
 }
 
