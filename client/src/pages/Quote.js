@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Link, Route, Switch,} from 'react-router-dom';
 import Nav from "../components/Nav";
-import { Image, Button } from "react-bootstrap";
+import { Image, Button, Jumbotron } from "react-bootstrap";
 import { Parallax, Background } from 'react-parallax';
 import Footer from "../components/Footer";
 
@@ -10,6 +10,9 @@ const Quote = () => (
     <div>
         <Nav />
         <br></br>
+        <Jumbotron className="JQuote">Insurance Quotes
+        <h6>Please Choose An Insurance Type to Be Directed to a Quote</h6>
+        </Jumbotron>
         {/* -----dynamic blur-----*/}
         <Parallax className="firstP"
             // blur={{ min: -15, max: 15 }}
