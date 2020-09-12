@@ -11,7 +11,9 @@ import BeneficiaryForm from "./pages/BeneficiaryForm";
 import OwnershipForm from "./pages/OwnershipForm";
 import About from "./pages/About";
 import Quote from "./pages/Quote";
+import MotoIns from "./pages/MotoIns";
 import AutoIns from "./pages/AutoIns";
+import BoatIns from "./pages/BoatIns";
 import HomeIns from "./pages/HomeIns";
 import LifeIns from "./pages/LifeIns";
 import Faqs from "./pages/Faqs"
@@ -46,6 +48,8 @@ function App() {
         <Route exact path="/Quote" component={Quote} />
         <Route exact path="/HomeIns" component={HomeIns} />
         <Route exact path="/AutoIns" component={AutoIns} />
+        <Route exact path="/MotoIns" component={MotoIns} />
+        <Route exact path="/BoatIns" component={BoatIns} />
         <Route exact path="/LifeIns" component={LifeIns} />
         <Route exact path="/Faqs" component={Faqs} />
 
