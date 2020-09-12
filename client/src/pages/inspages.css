@@ -1,5 +1,4 @@
 .inspages {
-  background-image: ;
   background-color: white;
 }
 
@@ -15,4 +14,12 @@
 
 p {
   padding: 20px;
+  font-family: 'Baskervville', serif;
+  font-size: 18px;
+  text-align: justify;
+  float: none;
+}
+
+img {
+  padding-top: 20px;
 }
