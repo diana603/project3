@@ -14,7 +14,7 @@ const BeneficiaryForm = () => {
     const [city, setCity] = useState(""); 
     const [state, setState] = useState("");
     const [zip, setZip] = useState(""); 
-    const [primaryBeneficiary, setPrimaryBeneficiary] = useState("");
+    const [primaryBeneficiaryFirst, setPrimaryBeneficiaryFirst] = useState("");
 
     const handleStateChange = (e) => {
         console.log(e.target.value)
@@ -40,7 +40,7 @@ const BeneficiaryForm = () => {
             console.log(addressTwo);
             console.log(city);
             console.log(zip);
-            console.log(primaryBeneficiary);
+            console.log(primaryBeneficiaryFirst);
             axios.get('/form/changeofbeneficairy',)
                 .then(function (response) {
                     // handle success
@@ -132,9 +132,9 @@ const BeneficiaryForm = () => {
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
                         <Form.Label>(1)Primary Beneficiary First Name </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter First Name" onChange={e => setPrimaryBeneficiary(e.target.value)} />
+                        <Form.Control type="Policy Number " placeholder="Enter First Name" onChange={e => setPrimaryBeneficiaryFirst(e.target.value)} />
                     </Form.Group>
-
+cv   b
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>Primary Beneficiary Last Name </Form.Label>
                         <Form.Control type="Name" placeholder="Enter Last Name" />
