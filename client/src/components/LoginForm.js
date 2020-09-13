@@ -45,39 +45,36 @@ const LoginForm = (props) => {
 
   return (
     <>
- 
-    <Form onSubmit={handleFormSubmit} className="LForm" >
-      <Form.Group controlId="emailInput">
-        <Form.Label className="loginInput">Email Address</Form.Label>
-        <Form.Control
-          name="emailInput"
-          type="email"
-          placeholder="Enter email"
-          value={formData.emailInput}
-          onChange={handleInputChange}
-        />
-      </Form.Group>
-      <Form.Group controlId="inputPassword">
-        <Form.Label className="loginInput">Password</Form.Label>
-        <Form.Control
-          name="passwordInput"
-          type="password"
-          placeholder="Password"
-          value={formData.passwordInput}
-          onChange={handleInputChange}
-        />
-      </Form.Group>
-      <Form.Group>
-        <Form.Text className="text-danger">{credsAreInvalid}</Form.Text>
-      </Form.Group>
-      <Button className="m-1" variant="primary" type="submit">
-        Login
-      </Button>
-      <Link to="/signUp" className="signLink">Not a Member? Sign Up!</Link>
-    </Form>
-
+      <Form onSubmit={handleFormSubmit} className="LForm" >
+        <Form.Group controlId="emailInput">
+          <Form.Label className="loginInput">Email Address</Form.Label>
+          <Form.Control
+            name="emailInput"
+            type="email"
+            placeholder="Enter email"
+            value={formData.emailInput}
+            onChange={handleInputChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="inputPassword">
+          <Form.Label className="loginInput">Password</Form.Label>
+          <Form.Control
+            name="passwordInput"
+            type="password"
+            placeholder="Password"
+            value={formData.passwordInput}
+            onChange={handleInputChange}
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Text className="text-danger">{credsAreInvalid}</Form.Text>
+        </Form.Group>
+        <Button className="m-1" variant="primary" type="submit">
+          Login
+        </Button>
+        <Link to="/signUp" className="signLink">Not a Member? Sign Up!</Link>
+      </Form>
     </>
-
   );
 };
 
