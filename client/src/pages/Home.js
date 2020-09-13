@@ -8,10 +8,8 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import CardHome from "../components/CardHome"
 
-
 function Home(props) {
   const { isAuth, logout } = useContext(AuthContext);
-
   const [secret, setSecret] = useState("");
 
   return (
@@ -23,9 +21,7 @@ function Home(props) {
         </Jumbotron>
         <Container>
           <Carousel />
-
         </Container>
-
         <div className="insurancecard">
           <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns" />
           <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns" />
@@ -33,7 +29,6 @@ function Home(props) {
           <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer" />
           <CardHome name="Insurance" Subtitle="FAQs about Insurance" link="./Faqs" />
         </div>
-
       </Container >
       <Footer />
     </>
@@ -41,4 +36,3 @@ function Home(props) {
 }
 
 export default Home;
-
