@@ -4,7 +4,6 @@ import { Jumbotron, Card, CardDeck } from "react-bootstrap";
 import Footer from "../components/Footer";
 
 
-//ABOUT EAST COAT INS/PROJECT GROUP WILL GO HERE
 function About () {
      return(
          <>

@@ -16,8 +16,8 @@ const BeneficiaryForm = () => {
     const [zip, setZip] = useState(""); 
     const [primaryBeneficiary, setPrimaryBeneficiary] = useState("");
     const handleStateChange = (e) => {
-        console.log(e.target.value)
-        setState(e.target.value)
+        console.log(e.target.value);
+        setState(e.target.value);
     }
 
     const verifyForm = (event) => {
@@ -25,9 +25,9 @@ const BeneficiaryForm = () => {
         const form = event.currentTarget;
         console.log(form);
         if (!state || state === "Select State") {
-            alert("Please Enter Address")
+            alert("Please Enter Address");
         } else if (state === "MA") {
-            alert("Please Note in the State of MA your signature must be witnessed by a disinterested third party")
+            alert("Please Note in the State of MA your signature must be witnessed by a disinterested third party");
         }
         else {
             console.log("formverified");
@@ -41,50 +41,48 @@ const BeneficiaryForm = () => {
             console.log(primaryBeneficiary);
             axios.get('/form/changeofbeneficairy',)
                 .then(function (response) {
-                    // handle success
                     console.log(response);
                 })
                 .catch(function (error) {
-                    // handle error
                     console.log(error);
                 })
         }
     }
     return (
         <>
-        <Nav />
+        <Nav/>
         <Container className="beneForm">
             <div className="introSentence">
-                <p> East Coast Life Insurance </p>
-                <p> Change of Beneficiary Form </p>
+                <p>East Coast Life Insurance</p>
+                <p>Change of Beneficiary Form</p>
             </div>
             <Form onSubmit={event => verifyForm(event)}>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>Policy Number(s) </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter Policy Number" onChange={number => setPolicyNumber(number.target.value)} />
+                        <Form.Label>Policy Number(s)</Form.Label>
+                        <Form.Control type="Policy Number " placeholder="Enter Policy Number" onChange={number => setPolicyNumber(number.target.value)}/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>First Name </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Name" onChange={e => setFirstName(e.target.value)} />
+                        <Form.Label>First Name</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Name" onChange={e => setFirstName(e.target.value)}/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>Last Name</Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Name" onChange={e => setLastName(e.target.value)} />
+                        <Form.Control type="Name" placeholder="Enter Name" onChange={e => setLastName(e.target.value)}/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="Enter Address" onChange={e => setAddress(e.target.value)} />
+                    <Form.Control placeholder="Enter Address" onChange={e => setAddress(e.target.value)}/>
                 </Form.Group>
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Enter Address" onChange={e => setAddressTwo(e.target.value)}  />
+                    <Form.Control placeholder="Enter Address" onChange={e => setAddressTwo(e.target.value)}/>
                 </Form.Group>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
-                        <Form.Control onChange={e => setCity(e.target.value)} />
+                        <Form.Control onChange={e => setCity(e.target.value)}/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
@@ -98,7 +96,7 @@ const BeneficiaryForm = () => {
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
-                        <Form.Control onChange={e => setZip(e.target.value)} />
+                        <Form.Control onChange={e => setZip(e.target.value)}/>
                     </Form.Group>
                 </Form.Row>
                 <div>
@@ -106,7 +104,7 @@ const BeneficiaryForm = () => {
                         Subject to the terms of the policy(ies) and any assignee on record with East Coast Insurance, the undersigned hereby revokes all beneficiary
                         designations or directions of payment previously made in respect to the proceeds payable on the death of the life insured under the above
                         policy(ies) and directs that such proceeds be paid to the beneficiary(ies) listed below. To retain any existing beneficiaries currently
-                        on fi le they must be restated below. For example, if you are changing only the secondary beneficiary, you must restate the primary
+                        on file they must be restated below. For example, if you are changing only the secondary beneficiary, you must restate the primary
                         beneficiary(ies). Please note:
                         • The insured on the policy cannot be listed as a beneficiary.
                         • Designations given in dollar amounts or fractions will not be accepted.
@@ -114,35 +112,35 @@ const BeneficiaryForm = () => {
                         payable to them. If the beneficiaries are unable to be shared equally (e.g., 1/3) we will designate the extra rounded percentile to the
                         fi rst listed beneficiary in each class (e.g., 33.34%, 33.33%, 33.33%). We will not accept designations to more than two decimal
                         places (e.g., 33.333% will not be accepted).
-                        To name any of the primary or secondary beneficiary(ies) as irrevocable beneficiaries, write “irrevocable” aft er their name(s).
+                        To name any of the primary or secondary beneficiary(ies) as irrevocable beneficiaries, write “irrevocable” after their name(s).
                     </p>
                 </div>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>(1)Primary Beneficiary First Name </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter First Name" onChange={e => setPrimaryBeneficiary(e.target.value)} />
+                        <Form.Label>(1)Primary Beneficiary First Name</Form.Label>
+                        <Form.Control type="Policy Number " placeholder="Enter First Name" onChange={e => setPrimaryBeneficiary(e.target.value)}/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Primary Beneficiary Last Name </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Last Name" />
+                        <Form.Label>Primary Beneficiary Last Name</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Last Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Percentage of Proceeds </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Percentages" />
+                        <Form.Label>Percentage of Proceeds</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Percentages"/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="1234 Main St" />
+                    <Form.Control placeholder="1234 Main St"/>
                 </Form.Group>
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Apartment, studio, or floor" />
+                    <Form.Control placeholder="Apartment, studio, or floor"/>
                 </Form.Group>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
@@ -156,35 +154,35 @@ const BeneficiaryForm = () => {
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>(2)Primary Beneficiary First Name </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter First Name" />
+                        <Form.Label>(2)Primary Beneficiary First Name</Form.Label>
+                        <Form.Control type="Policy Number " placeholder="Enter First Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Primary Beneficiary Last Name </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Last Name" />
+                        <Form.Label>Primary Beneficiary Last Name</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Last Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Percentage of Proceeds </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Percentages" />
+                        <Form.Label>Percentage of Proceeds</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Percentages"/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="1234 Main St" />
+                    <Form.Control placeholder="1234 Main St"/>
                 </Form.Group>
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Apartment, studio, or floor" />
+                    <Form.Control placeholder="Apartment, studio, or floor"/>
                 </Form.Group>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
@@ -198,7 +196,7 @@ const BeneficiaryForm = () => {
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                 </Form.Row>
                 <div>
@@ -208,30 +206,30 @@ const BeneficiaryForm = () => {
                 </div>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>(1)Secondary Beneficiary First Name </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter First Name" />
+                        <Form.Label>(1)Secondary Beneficiary First Name</Form.Label>
+                        <Form.Control type="Policy Number " placeholder="Enter First Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Secondary Beneficiary Last Name </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Last Name" />
+                        <Form.Label>Secondary Beneficiary Last Name</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Last Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Percentage of Proceeds </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Percentages" />
+                        <Form.Label>Percentage of Proceeds</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Percentages"/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="1234 Main St" />
+                    <Form.Control placeholder="1234 Main St"/>
                 </Form.Group>
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Apartment, studio, or floor" />
+                    <Form.Control placeholder="Apartment, studio, or floor"/>
                 </Form.Group>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
@@ -245,35 +243,35 @@ const BeneficiaryForm = () => {
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>(2)Secondary Beneficiary First Name </Form.Label>
-                        <Form.Control type="Policy Number " placeholder="Enter First Name" />
+                        <Form.Label>(2)Secondary Beneficiary First Name</Form.Label>
+                        <Form.Control type="Policy Number " placeholder="Enter First Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Secondary Beneficiary Last Name </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Last Name" />
+                        <Form.Label>Secondary Beneficiary Last Name</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Last Name"/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridPassword">
-                        <Form.Label>Percentage of Proceeds </Form.Label>
-                        <Form.Control type="Name" placeholder="Enter Percentages" />
+                        <Form.Label>Percentage of Proceeds</Form.Label>
+                        <Form.Control type="Name" placeholder="Enter Percentages"/>
                     </Form.Group>
                 </Form.Row>
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
-                    <Form.Control placeholder="1234 Main St" />
+                    <Form.Control placeholder="1234 Main St"/>
                 </Form.Group>
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
-                    <Form.Control placeholder="Apartment, studio, or floor" />
+                    <Form.Control placeholder="Apartment, studio, or floor"/>
                 </Form.Group>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
@@ -287,7 +285,7 @@ const BeneficiaryForm = () => {
                     </Form.Group>
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
-                        <Form.Control />
+                        <Form.Control/>
                     </Form.Group>
                 </Form.Row>
                 <div>
@@ -309,22 +307,22 @@ const BeneficiaryForm = () => {
                     </p>
                 </div>
                 <Form.Group controlId="signature">
-                    <Form.Label>Signature Of Owner and Date (mmddyyyy) </Form.Label>
-                    <Form.Control placeholder="Sign Here" />
+                    <Form.Label>Signature Of Owner and Date (mmddyyyy)</Form.Label>
+                    <Form.Control placeholder="Sign Here"/>
                 </Form.Group>
                 <Form.Group controlId="signature">
-                    <Form.Label>Signature of Additional Owner or Irrevocable Beneficiary (if applicable) and Date(mmddyyyy) </Form.Label>
-                    <Form.Control placeholder="Sign Here" />
+                    <Form.Label>Signature of Additional Owner or Irrevocable Beneficiary (if applicable) and Date(mmddyyyy)</Form.Label>
+                    <Form.Control placeholder="Sign Here"/>
                 </Form.Group>
                 <div>
                     <p>
-                        Important: In Massachusett s, the owner’s signature must be witnessed by a disinterested person, over the age of 18, who is not being named
+                        Important: In Massachusetts, the owner’s signature must be witnessed by a disinterested person, over the age of 18, who is not being named
                         as a beneficiary.
                     </p>
                 </div>
                 <Form.Group controlId="signature">
-                    <Form.Label>Signature of Witness and Date(mmddyyyy) </Form.Label>
-                    <Form.Control placeholder="Sign Here" />
+                    <Form.Label>Signature of Witness and Date(mmddyyyy)</Form.Label>
+                    <Form.Control placeholder="Sign Here"/>
                 </Form.Group>
                 <div className="beneBtn">
                     <Button className="gobackBtn" variant="primary">

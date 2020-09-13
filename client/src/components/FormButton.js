@@ -37,7 +37,7 @@ const FormButton = props => {
 
     return (
     <div className="formBody">
-        <h2>Please Select The Form You Would Like to Complete</h2>
+        <h2>Please Select The Form That You Would Like to Complete:</h2>
         <h3>Tip: For details on each form, hover over the corresponding button.</h3>
         <div className="formbtn">
             <Link to="/BeneficiaryForm">
@@ -45,9 +45,11 @@ const FormButton = props => {
                     Change of Beneficiary
                 </Button>
             </Link>
-            <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg" className="OForm">
-                Change of Ownership 
-            </Button>
+            <Link to="/OwnershipForm">
+                <Button  onMouseEnter={showChangeForm}  variant="primary" size="lg" className="OForm">
+                    Change of Ownership 
+                </Button>
+            </Link>  
         </div>
         <Modal show={show} handleHide={handleHide} modalTitle={modalTitle} modalInfo={modalInfo} nextButton={nextButton} formLink={formLink}/>
     </div> 
