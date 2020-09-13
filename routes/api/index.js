@@ -6,7 +6,5 @@ router.get("/secrets", isAuthenticated, (req, res) => {
   );
 });
 
-// router.post(endpoint or user will be using to contact back end. after first input second one will be handler.)  
-
 module.exports = router;
 
