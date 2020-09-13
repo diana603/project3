@@ -176,3 +176,6 @@ h1 {
   text-align: center;
 }
 
+p.card-text {
+  font-size: 15px;
+}
