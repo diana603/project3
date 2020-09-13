@@ -12,16 +12,10 @@ function BoatIns() {
         <h1 className="text">Boat Insurance</h1>
       </Jumbotron>
       <Container className="inspage">
-        <Row>
-          {/* </Col>
-          <Col md={{ span: 7 }}> */}
+        <Row style={{ display: "inline" }}>
 
           < img src={'../assets/img/boats_1920.jpg'}
-            style={{ height: "450px", float: "left" }} />;
-{/* </Col> */}
-
-          {/* <Col md={{ span: 5 }}
-            style={{ textAlign: "justify" }}> */}
+            style={{ height: "450px", float: "left", margin: "0.7em" }} />
 
           <p>No matter what you prefer, your boat needs insurance. You might spend summer afternoons in search of that big bass in your fishing boat. Perhaps you have the perfect pontoon boat for a relaxed cruise around the lake on the weekends. Or your sailboat takes you on solitary journeys wherever the wind takes you. Boats are big purchases, but if you love the water, you know they’re worth it. </p>
 
