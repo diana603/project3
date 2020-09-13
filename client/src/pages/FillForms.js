@@ -5,10 +5,8 @@ import { Container, Row, Button, Col, Jumbotron } from "react-bootstrap";
 import Axios from "axios";
 import Footer from "../components/Footer";
 
-
 function Home(props) {
   const { isAuth, logout } = useContext(AuthContext);
-
   const [secret, setSecret] = useState("");
 
   return (
@@ -17,7 +15,6 @@ function Home(props) {
       <Container className="signup">
         <Row>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
-
             {isAuth ? (
               <>
                 <Button
@@ -30,14 +27,14 @@ function Home(props) {
                 >
                   Logout
               </Button>
-                <Button
-                  className="m-1"
-                  onClick={e => {
-                    e.preventDefault();
-                    props.history.push("/users/profile");
-                  }}
-                >
-                  Members
+              <Button
+                className="m-1"
+                onClick={e => {
+                  e.preventDefault();
+                  props.history.push("/users/profile");
+                }}
+              >
+                Members
               </Button>
               </>
             ) : (
@@ -50,7 +47,7 @@ function Home(props) {
                     }}
                   >
                     Login
-              </Button>
+                  </Button>
                   <Button
                     className="m-1"
                     onClick={e => {
@@ -59,10 +56,9 @@ function Home(props) {
                     }}
                   >
                     Signup
-              </Button>
+                  </Button>
                 </>
               )}
-
           </Col>
         </Row>
         <Row>
@@ -72,12 +68,8 @@ function Home(props) {
         </Row>
       </Container>
       <Footer />
-
     </Jumbotron>
   )
 }
 
 export default Home;
-
-
-

@@ -22,10 +22,7 @@ function BoatIns() {
           <p>When insuring property there 2 basic types: Actual Cash Value Policies or Agreed Amount Value Policies.</p> <p>Actual Cash Value policies pay for Replacement Costs less depreciation at the time of the loss. In the event of a total loss, used boat pricing guides and other resources are used to determine the approximate market value of your vessel. A partial loss is settled by taking the total cost of the repair less a percentage for depreciation.</p>
 
           <p>Agreed Amount Value policies mean you and the insurance company have agreed on the value of your vessel and in the event of a total loss you will be paid that amount. Agreed Amount Value policies also replace old items for new in the event of a partial loss without any deduction for depreciation. Most Agreed Amount Value policies require actual cash value on certain damaged property such as sails, protective covers, batteries, dinghies, trailers and aged outboard motors, lower drive units or outdrives. </p>
-
           <p style={{ textAlign: "right" }}><cite>Definition by Wikipedia</cite></p>
-
-
         </Row>
       </Container>
       <Footer />

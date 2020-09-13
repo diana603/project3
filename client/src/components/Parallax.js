@@ -11,10 +11,11 @@ const MyComponent = () => (
             bgImageAlt="formimg"
             strength={-200}
         >
-        <FormButton />
+            <FormButton />
             <div style={{ height: '800px' }} />
         </Parallax>
-         {/* -----renderProp: "renderLayer"-----*/}
+        {/* -----renderProp: "renderLayer"-----*/}
     </div>
 );
+
 export default MyComponent;

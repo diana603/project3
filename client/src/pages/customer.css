@@ -3,43 +3,41 @@
     /* background-image: url(../pages/images/formimg.jpg); background-size: 100%; */
     margin-bottom: 5px;
     font-family: 'Playfair Display', serif;
-
 }
 
 .text{
     color:white; 
     font-family: 'Playfair Display', serif;
-
 }
+
 .beneForm{
     padding-top: 20px;
     font-family: 'Playfair Display', serif;
-
 }
+
 .introSentence{
     display:flex;
     justify-content:space-between; 
     font-size: 190%;
     font-family: 'Playfair Display', serif;
-
 }
+
 .beneBtn{
     display:flex;
     justify-content: flex-end;
     font-family: 'Playfair Display', serif;
-
 }
+
 .gobackBtn{
     margin-right:2%;
     font-family: 'Playfair Display', serif;
-
 }
+
 .formbtn{
     display:flex; 
     justify-content: space-around;
     margin-top: 5%; 
     font-family: 'Playfair Display', serif;
-
 }
 
 h2 {
@@ -47,25 +45,15 @@ h2 {
     text-align: center;
     font-size: 200%;
     font-family: 'Playfair Display', serif;
-
-
 }
 
 h3 {
     text-align: center;
     font-size: 100%;
     font-family: 'Playfair Display', serif;
-
 }
 
 .BForm, .OForm, .WForm {
     background-color: black;
     font-family: 'Playfair Display', serif;
-
-
 }
-
-
-/* .formBody {
-
-} */

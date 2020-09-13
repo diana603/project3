@@ -21,7 +21,6 @@ h1.pageHeader {
   margin: 2px;
   color: aliceblue;
   font-size: 50px;
-  
 }
 
 .insurance {
@@ -95,6 +94,7 @@ footer {
   color: #007BFF;
   text-decoration: none;
 }
+
 .homeQuote, .boatQuote {
   font-size: 50px;
   font-weight: bold;
@@ -131,5 +131,4 @@ footer {
   padding-top: 20px;
   color: white;
   text-align: center;
-
 }

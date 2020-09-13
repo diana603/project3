@@ -23,13 +23,13 @@ function HomeIns() {
             <p>Additionally, homeowner's insurance provides financial protection against disasters. A standard home insurance policy insures the home itself along with the things kept inside.</p>
 
             <p style={{ textAlign: "right" }}><cite>Definition by Wikipedia</cite></p>
-
           </Col>
           <Col md={{ span: 7 }}>
             < img
               style={{ height: "450px" }}
-              src={'../assets/img/architecture_1920.jpg'} />;
-            </Col>
+              src={'../assets/img/architecture_1920.jpg'}
+            />;
+          </Col>
         </Row>
       </Container>
       <Footer />

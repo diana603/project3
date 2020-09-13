@@ -12,7 +12,6 @@ import { Jumbotron } from "react-bootstrap";
 
 function Login(props) {
   const { isAuth } = useContext(AuthContext);
-
   console.log("login auth: ", isAuth);
 
   return isAuth ? (
