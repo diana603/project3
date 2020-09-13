@@ -14,7 +14,6 @@ function Faqs() {
         <Row>
           <Col md={{ span: 5 }}
             style={{ textAlign: "justify" }}>
-
             <h2>What is insurance?</h2>
             <p>Insurance is a means of protection from financial loss. It is a form of risk management, primarily used to hedge against the risk of a contingent or uncertain loss.</p>
 
@@ -25,13 +24,12 @@ function Faqs() {
             <p style={{ textAlign: "right" }} ><cite>Definition by Wikipedia</cite></p>
 
           </Col>
-
           <Col md={{ span: 7 }}>
-
             < img
               style={{ height: "425px" }}
-              src={'../assets/img/woman_1920.jpg'} />;
-        </Col>
+              src={'../assets/img/woman_1920.jpg'}
+            />;
+          </Col>
         </Row>
       </Container>
       <Footer />
