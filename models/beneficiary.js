@@ -75,11 +75,6 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false, 
             unique: false, 
         }, 
-        
-
-
-
     })
     return Beneficiary;
-
 }

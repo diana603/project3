@@ -3,7 +3,6 @@ import Axios from "axios";
 import { Redirect } from "react-router-dom";
 
 export const AuthContext = React.createContext();
-
 export const AuthProvider = ({ children }) => {
   const [isAuth, setIsAuth] = useState(false);
 
