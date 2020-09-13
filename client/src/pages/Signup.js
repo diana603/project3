@@ -7,14 +7,14 @@ import Nav from "../components/Nav";
 function Signup(props) {
   return (
     <>
-    <Container className="signup">
-      <Nav />
-      <Row>
-        <Col md={{ span: 8, offset: 2 }}>
-          <Register {...props} />
-        </Col>
-      </Row>
-    </Container>
+      <Container className="signup">
+        <Nav/>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }}>
+            <Register {...props}/>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
