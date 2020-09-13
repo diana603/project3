@@ -20,13 +20,15 @@ function NavBar() {
                             <NavDropdown.Item href="/MotoIns">Motorcycle</NavDropdown.Item>
                             <NavDropdown.Item href="/Faqs">FAQ</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="https://www.bankrate.com/calculators/insurance/life-insurance-calculator.aspx">Life Insurance Calculator</Nav.Link>
+                        <Nav.Link href="https://www.bankrate.com/calculators/insurance/life-insurance-calculator.aspx">
+                            Life Insurance Calculator
+                        </Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link href="/Login">Login</Nav.Link>
                         <Nav.Link eventKey={2} href="/About">
                             About Us
-                    </Nav.Link>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

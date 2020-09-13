@@ -3,7 +3,6 @@ import { Route, Switch, BrowserRouter as Router, Redirect } from "react-router-d
 import { AuthProvider, AuthContext } from "./AuthContext";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginForm from "./pages/Login";
 import Customer from "./pages/Customer";
@@ -16,7 +15,7 @@ import AutoIns from "./pages/AutoIns";
 import BoatIns from "./pages/BoatIns";
 import HomeIns from "./pages/HomeIns";
 import LifeIns from "./pages/LifeIns";
-import Faqs from "./pages/Faqs"
+import Faqs from "./pages/Faqs";
 
 function App() {
   const { isAuth, setIsAuth } = useContext(AuthContext);

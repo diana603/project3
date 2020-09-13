@@ -4,15 +4,12 @@ import { states } from "./states";
 import { Form, Col, Button, Container } from 'react-bootstrap/';
 import Nav from "../components/Nav";
 
-
 export default function OwnershipForm() {
     const [state, setState] = useState("");
-
     const handleStateChange = (e) => {
         console.log(e.target.value)
         setState(e.target.value)
     }
-
     const verifyform = () => {
         if (!state || state === "Select State") {
             alert("Please Enter Address")
@@ -34,34 +31,28 @@ export default function OwnershipForm() {
                         <Form.Label>Policy Number(s) </Form.Label>
                         <Form.Control type="Policy Number " placeholder="Enter Policy Number" />
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>Current Owners First Name </Form.Label>
                         <Form.Control type="Name" placeholder="Enter Name" />
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>Current Owners Last Name</Form.Label>
                         <Form.Control type="Name" placeholder="Enter Name" />
                     </Form.Group>
                 </Form.Row>
-
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
                     <Form.Control placeholder="1234 Main St" />
                 </Form.Group>
-
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
                     <Form.Control placeholder="Apartment, studio, or floor" />
                 </Form.Group>
-
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
                         <Form.Control />
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
                         <Form.Control as="select" onChange={handleStateChange} defaultValue="Choose...">
@@ -72,7 +63,6 @@ export default function OwnershipForm() {
                             <option>...</option>
                         </Form.Control>
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
                         <Form.Control />
@@ -84,21 +74,18 @@ export default function OwnershipForm() {
                     The undersigned hereby transfers and assigns absolutely, all rights, title and interest in the above policy(ies) to the assignee(s) indicated below and hereby revokes any beneficiary designation or direction of payment previously made in respect to the proceeds payable on the death of the life insured under the above policy(ies) and directs that such proceeds be paid to the assignee(s) and, if more than one, in the same proportion as their ownership rights bear to one another. The assignor(s) warrant the validity of this assignment.
             </p>
             </div>
-
             <Form.Group id="formGridCheckbox">
                 <Form.Check type="checkbox" label="Value received" />
             </Form.Group>
             <Form.Group id="formGridCheckbox">
                 <Form.Check type="checkbox" label="No Value received (as a gift for love and affection" />
             </Form.Group>
-
             <Form>
                 <Form.Row>
                     <Form.Group as={Col} controlId="name">
                         <Form.Label>New Owners First Name </Form.Label>
                         <Form.Control type="Name " placeholder="Enter First Name" />
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="name">
                         <Form.Label>New Owners Last Name </Form.Label>
                         <Form.Control type="Name" placeholder="Enter Last Name" />
@@ -107,31 +94,24 @@ export default function OwnershipForm() {
                         <Form.Label>Date of Birth (MM/DD/YYYY) </Form.Label>
                         <Form.Control type="Name " placeholder="Enter First Name" />
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridPassword">
                         <Form.Label>Relationship to Insured </Form.Label>
                         <Form.Control type="Relationship" placeholder="Enter Relationship" />
                     </Form.Group>
-
-
                 </Form.Row>
-
                 <Form.Group controlId="formGridAddress1">
                     <Form.Label>Address</Form.Label>
                     <Form.Control placeholder="1234 Main St" />
                 </Form.Group>
-
                 <Form.Group controlId="formGridAddress2">
                     <Form.Label>Address 2</Form.Label>
                     <Form.Control placeholder="Apartment, studio, or floor" />
                 </Form.Group>
-
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridCity">
                         <Form.Label>City</Form.Label>
                         <Form.Control />
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridState">
                         <Form.Label>State</Form.Label>
                         <Form.Control as="select" onChange={handleStateChange} defaultValue="Choose...">
@@ -142,14 +122,12 @@ export default function OwnershipForm() {
                             <option>...</option>
                         </Form.Control>
                     </Form.Group>
-
                     <Form.Group as={Col} controlId="formGridZip">
                         <Form.Label>Zip</Form.Label>
                         <Form.Control />
                     </Form.Group>
                 </Form.Row>
             </Form>
-
             <div>
                 <p>
                     Complete this section when ownership is changing to a trust in section 2.
@@ -157,14 +135,12 @@ export default function OwnershipForm() {
                     accurate and complete and also certify that the trust is:
             </p>
             </div>
-
             <Form.Group id="formGridCheckbox">
                 <Form.Check type="checkbox" label=" Irrevocable" />
             </Form.Group>
             <Form.Group id="formGridCheckbox">
                 <Form.Check type="checkbox" label="Revocable" />
             </Form.Group>
-
             <div>
                 <p>
                     • The trustee(s) is/are allowed by the terms of the trust to own and administer life insurance and securities;
@@ -179,26 +155,22 @@ export default function OwnershipForm() {
                     the trust provisions.
             </p>
             </div>
-
             <Form.Row>
                 <Form.Group as={Col} controlId="name">
                     <Form.Label>Name of all current trustee(s) </Form.Label>
                     <Form.Control type="name" placeholder="Enter Name" />
                 </Form.Group>
             </Form.Row>
-
             <Form.Row>
                 <Form.Group as={Col} controlId="name">
                     <Form.Label>Name of grantor(s) </Form.Label>
                     <Form.Control type="Name" placeholder="Enter Name" />
                 </Form.Group>
-
                 <Form.Group as={Col} controlId="name">
                     <Form.Label>Relationship of the grantor(s) and all the trustee(s)</Form.Label>
                     <Form.Control type="Name" placeholder="Enter Relationship" />
                 </Form.Group>
             </Form.Row>
-
             <div>
                 <p>
                     Trustee authorization
@@ -207,7 +179,6 @@ export default function OwnershipForm() {
                     be signed by (check one):
             </p>
             </div>
-
             <Form.Group id="formGridCheckbox">
                 <Form.Check type="checkbox" label=" All Trustees (default)" />
             </Form.Group>
@@ -226,7 +197,6 @@ export default function OwnershipForm() {
                     <Form.Control type="name" placeholder="Enter Name" />
                 </Form.Group>
             </Form.Row>
-
             <div>
                 <p>
                     By signing this form, each trustee understands and agrees that the Company shall rely on the above designation of authority to take action
@@ -250,13 +220,11 @@ export default function OwnershipForm() {
             <Form.Group id="formGridCheckbox">
                 <Form.Check type="checkbox" label="  I am subject to backup withholding as a result of a failure to report all interest and dividends." />
             </Form.Group>
-
             <div>
                 <p>
                     The Internal Revenue Service does not require your consent to any provision of this document other than the certificationn required to prevent backup withholding.
                 </p>
             </div>
-
             <Form.Group controlId="signature">
                 <Form.Label>Signature of Current Owner and Date(mmddyyyy) </Form.Label>
                 <Form.Control placeholder="Sign Here" />
@@ -277,7 +245,6 @@ export default function OwnershipForm() {
                 <Form.Label>Signature of Witness (if applicable) and Date(mmddyyyy) </Form.Label>
                 <Form.Control placeholder="Sign Here" />
             </Form.Group>
-
             <div className="beneBtn">
             <Button className="gobackBtn" variant="primary">
                         Go Back
@@ -286,7 +253,6 @@ export default function OwnershipForm() {
                         Next
             </Button>
         </div>
-        
         </Container>
         </>
     )
