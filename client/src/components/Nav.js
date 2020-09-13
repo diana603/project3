@@ -7,7 +7,7 @@ function NavBar() {
         <div className="NavBar" style={{ zIndex: 500 }}>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand href="/">East Coast Insurance</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/Quote">Get a Quote</Nav.Link>

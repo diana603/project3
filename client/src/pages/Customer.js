@@ -9,14 +9,14 @@ import Nav from "../components/Nav";
 const Customer = () => {
     return (
         <>
-        <Nav />
+        <Nav/>
         <Jumbotron className="myJumbotron" fluid>
             <Container>
                 <h1 className="text">Customer Service Forms</h1>
             </Container>
         </Jumbotron>
-        <Parallax />
-        <Footer />
+        <Parallax/>
+        <Footer/>
         </>
     )
 }
