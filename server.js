@@ -9,7 +9,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname, "/client")));
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
