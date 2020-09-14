@@ -22,10 +22,10 @@ function Home(props) {
           <Carousel/>
         </Container>
         <div className="insurancecard">
-          <CardHome name="Life" Subtitle="When you want to protect them" link="/LifeIns"/>
-          <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns"/>
-          <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns"/>
-          <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer"/>
+          <CardHome name="Life" Subtitle="When You Want to Protect Your Family" link="/LifeIns"/>
+          <CardHome name="Auto" Subtitle="When You Want to Protect Your Automobile" link="/AutoIns"/>
+          <CardHome name="Home" Subtitle="When You Want to Protect Your Home" link="/HomeIns"/>
+          <CardHome name="Customer Forms" Subtitle="Update Customer Forms" link="./Customer"/>
           <CardHome name="Insurance" Subtitle="FAQs About Insurance" link="./Faqs"/>
         </div>
       </Container>
