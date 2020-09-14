@@ -85,7 +85,7 @@ const OwnerShipForm = () => {
                 <Container className="OwnerShipForm">
                     <div className="introSentence">
                         <p> East Coast Life Insurance </p>
-                        <p> Change of Beneficiary Form </p>
+                        <p> Change of Ownership Form </p>
                     </div>
                     <Form onSubmit={event => verifyForm(event)}>
                         <Accordion>
@@ -298,57 +298,57 @@ const OwnerShipForm = () => {
                                     </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="3">
-                                <>
-                                    <div>
-                                        <p>
-                                            By signing this form, each trustee understands and agrees that the Company shall rely on the above designation of authority to take action with respect to the policy and this designation of authority shall remain in effect until revoked by a written request of the trustee(s) that is accepted and acknowledged by the Company.
+                                    <>
+                                        <div>
+                                            <p>
+                                                By signing this form, each trustee understands and agrees that the Company shall rely on the above designation of authority to take action with respect to the policy and this designation of authority shall remain in effect until revoked by a written request of the trustee(s) that is accepted and acknowledged by the Company.
 
-                                            Certification required of U.S. persons only (including U.S. citizens, U.S. resident aliens, or other U.S. persons). Under penalties of perjury, I certify that:
+                                                Certification required of U.S. persons only (including U.S. citizens, U.S. resident aliens, or other U.S. persons). Under penalties of perjury, I certify that:
 
-                                            1. Th e number shown on this form is my correct Taxpayer Identification Number,
-                                            2. I am not subject to backup withholding because: (a) I am exempt from backup withholding, or (b) I have not been notified by the Internal Revenue Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends, or (c) the IRS has notified me that I am no longer subject to backup withholding, and
-                                            3. I am a U.S. citizen or other U.S. person, including a U.S. resident alien (as defined in the IRS Form W-9 instructions). Certification instructions You must check the box below if you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return.
+                                                1. Th e number shown on this form is my correct Taxpayer Identification Number,
+                                                2. I am not subject to backup withholding because: (a) I am exempt from backup withholding, or (b) I have not been notified by the Internal Revenue Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends, or (c) the IRS has notified me that I am no longer subject to backup withholding, and
+                                                3. I am a U.S. citizen or other U.S. person, including a U.S. resident alien (as defined in the IRS Form W-9 instructions). Certification instructions You must check the box below if you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return.
 
-                                            Certification instructions
+                                                Certification instructions
 
-                                            You must check the box below if you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return.
+                                                You must check the box below if you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return.
                                         </p>
-                                    </div> 
-                                     <div>
-                                        <Form.Group controlId="formBasicCheckbox">
-                                            <Form.Check type="checkbox" label="I am subject to backup withholding as a result of a failure to report all interest and dividends." />
-                                        </Form.Group>
-                                    </div> 
-                                    
-                                     <div>
-                                        <p>
-                                            The Internal Revenue Service does not require your consent to any provision of this document other than the certification required to prevent backup withholding.
-                                        </p>
-                                    </div> 
-                                    
-
-                                    <Card.Body>
-                                        <Form.Group controlId="signature">
-                                            <Form.Label>Signature Of Current Owner and Date (mmddyyyy) </Form.Label>
-                                            <Form.Control placeholder="Sign Here" />
-                                        </Form.Group>
-
-                                        <Form.Group controlId="signature">
-                                            <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>
-                                            <Form.Control placeholder="Sign Here" />
-                                        </Form.Group>
+                                        </div>
+                                        <div>
+                                            <Form.Group controlId="formBasicCheckbox">
+                                                <Form.Check type="checkbox" label="I am subject to backup withholding as a result of a failure to report all interest and dividends." />
+                                            </Form.Group>
+                                        </div>
 
                                         <div>
                                             <p>
-                                                Important: In Massachusett s, the owner’s signature must be witnessed by a disinterested person, over the age of 18, who is not being named
-                                                as a beneficiary.
-                                            </p>
+                                                The Internal Revenue Service does not require your consent to any provision of this document other than the certification required to prevent backup withholding.
+                                        </p>
                                         </div>
-                                        <Form.Group controlId="signature">
-                                            <Form.Label>Signature of Witness and Date(mmddyyyy) </Form.Label>
-                                            <Form.Control placeholder="Sign Here" />
-                                        </Form.Group>
-                                    </Card.Body>
+
+
+                                        <Card.Body>
+                                            <Form.Group controlId="signature">
+                                                <Form.Label>Signature Of Current Owner and Date (mmddyyyy) </Form.Label>
+                                                <Form.Control placeholder="Sign Here" />
+                                            </Form.Group>
+
+                                            <Form.Group controlId="signature">
+                                                <Form.Label>Signature of New Owner (mmddyyyy) </Form.Label>
+                                                <Form.Control placeholder="Sign Here" />
+                                            </Form.Group>
+
+                                            <div>
+                                                <p>
+                                                    Important: In Massachusett s, the owner’s signature must be witnessed by a disinterested person, over the age of 18, who is not being named
+                                                    as a beneficiary.
+                                            </p>
+                                            </div>
+                                            <Form.Group controlId="signature">
+                                                <Form.Label>Signature of Witness and Date(mmddyyyy) </Form.Label>
+                                                <Form.Control placeholder="Sign Here" />
+                                            </Form.Group>
+                                        </Card.Body>
                                     </>
                                 </Accordion.Collapse>
                             </Card>
