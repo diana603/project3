@@ -41,13 +41,14 @@ router.post("/OwnerShipFormData", (req, res) => {
     city: req.body.city,
     state: req.body.state,
     zip: req.body.zip,
-    primaryBeneficiaryFName: req.body.primaryBeneficiaryFName,
-    primaryBeneficiaryLName: req.body.primaryBeneficiaryLName,
-    PrimaryPercentage: req.body.PrimaryPercentage,
-    PAddressOne: req.body.PAddressOne,
-    PAddressTwo: req.body.PAddressTwo,
-    PCity: req.body.PCity,
-    PZip: req.body.PZip
+    newOwnersFName: req.body.newOwnersFName,
+    newOwnersLName: req.body.newOwnersLName,
+    dateOfBirth: req.body.dateOfBirth,
+    relationshipToInsured: req.body.relationshipToInsured,
+    newOwnersAddress: req.body.newOwnersAddress,
+    newOwnersAddressTwo: req.body.newOwnersAddressTwo,
+    newOwnersCity: req.body.newOwnersCity,
+    newOwnersZip: req.body.newOwnersZip
   }).then((dbResponse) => {
     res.json(dbResponse);
   })
