@@ -31,7 +31,7 @@ router.post("/beneFormData", (req, res) => {
       res.json(err);
     });
 })
-router.post("/OwnerFormData", (req, res) => {
+router.post("/OwnerShipFormData", (req, res) => {
   db.Ownership.create({
     policyNumber: req.body.policyNumber,
     firstName: req.body.firstName,

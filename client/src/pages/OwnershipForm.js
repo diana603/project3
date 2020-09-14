@@ -55,12 +55,12 @@ const OwnerShipForm = () => {
                 zip: zip,
                 newOwnersFName: newOwnersFName,
                 newOwnersLName: newOwnersLName,
-                dateOfBirth:dateOfBirth,
-                relationshipToInsured:relationshipToInsured,
-                newOwnersAddress:newOwnersAddress,
-                newOwnersAddressTwo:newOwnersAddressTwo,
-                newOwnersCity:newOwnersCity,
-                newOwnersZip:newOwnersZip
+                dateOfBirth: dateOfBirth,
+                relationshipToInsured: relationshipToInsured,
+                newOwnersAddress: newOwnersAddress,
+                newOwnersAddressTwo: newOwnersAddressTwo,
+                newOwnersCity: newOwnersCity,
+                newOwnersZip: newOwnersZip
 
             })
                 .then(function (response) {
@@ -159,7 +159,7 @@ const OwnerShipForm = () => {
                                     <Accordion.Toggle as={Button} variant="link" eventKey="1">
                                         New Owner Information</Accordion.Toggle>
                                 </Card.Header>
-                                    <Accordion.Collapse eventKey="1">
+                                <Accordion.Collapse eventKey="1">
                                     <Card.Body>
 
                                         <div>
@@ -231,7 +231,7 @@ const OwnerShipForm = () => {
                                         Complete This Section When Ownership is Changing to a Trust.
                                     </Accordion.Toggle>
                                 </Card.Header>
-                                    <Accordion.Collapse eventKey="2">
+                                <Accordion.Collapse eventKey="2">
                                     <Card.Body>
                                         <div>
                                             <p>
@@ -298,6 +298,7 @@ const OwnerShipForm = () => {
                                     </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="3">
+                                <>
                                     <div>
                                         <p>
                                             By signing this form, each trustee understands and agrees that the Company shall rely on the above designation of authority to take action with respect to the policy and this designation of authority shall remain in effect until revoked by a written request of the trustee(s) that is accepted and acknowledged by the Company.
@@ -312,17 +313,19 @@ const OwnerShipForm = () => {
 
                                             You must check the box below if you have been notified by the IRS that you are currently subject to backup withholding because you have failed to report all interest and dividends on your tax return.
                                         </p>
-                                    </div>
-                                    <div>
+                                    </div> 
+                                     <div>
                                         <Form.Group controlId="formBasicCheckbox">
                                             <Form.Check type="checkbox" label="I am subject to backup withholding as a result of a failure to report all interest and dividends." />
                                         </Form.Group>
-                                    </div>
-                                    <div>
+                                    </div> 
+                                    
+                                     <div>
                                         <p>
                                             The Internal Revenue Service does not require your consent to any provision of this document other than the certification required to prevent backup withholding.
                                         </p>
-                                    </div>
+                                    </div> 
+                                    
 
                                     <Card.Body>
                                         <Form.Group controlId="signature">
@@ -346,6 +349,7 @@ const OwnerShipForm = () => {
                                             <Form.Control placeholder="Sign Here" />
                                         </Form.Group>
                                     </Card.Body>
+                                    </>
                                 </Accordion.Collapse>
                             </Card>
                         </Accordion>

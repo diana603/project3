@@ -76,7 +76,7 @@ const BeneficiaryForm = () => {
                 SZip: SZip,
                 SignatureOfOwner: SignatureOfOwner,
                 SignatureOfAdditionalOwner: SignatureOfAdditionalOwner,
-                SignatureOfWitness:SignatureOfWitness
+                SignatureOfWitness: SignatureOfWitness
 
             })
                 .then(function (response) {
