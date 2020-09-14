@@ -71,7 +71,7 @@ footer {
 }
 
 .row {
-  display: table;
+  /*display: table;*/
   margin: 0px, 1px;
   align-self: start;
 }
