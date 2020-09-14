@@ -28,7 +28,7 @@ app.get("*", (req, res) => {
 });
 
 db.sequelize
-  .sync({ force: true })
+  .sync({ force: false })
   .then(() => {
     console.log(`${process.env.DB_NAME} database connected`);
   })

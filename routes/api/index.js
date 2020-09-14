@@ -23,7 +23,18 @@ router.post("/beneFormData", (req, res) => {
     PAddressOne: req.body.PAddressOne,
     PAddressTwo: req.body.PAddressTwo,
     PCity: req.body.PCity,
-    PZip: req.body.PZip
+    PZip: req.body.PZip,
+    SecondaryBeneficiaryFName: req.body.SecondaryBeneficiaryFName,
+    SecondaryBeneficiaryLName: req.body.SecondaryBeneficiaryLName,
+    SecondaryPercentage: req.body.SecondaryPercentage,
+    SAddress: req.body.SAddress,
+    SAddressTwo: req.body.SAddressTwo,
+    SCity: req.body.SCity,
+    SZip: req.body.SZip,
+    SignatureOfOwner: req.body.SignatureOfOwner,
+    SignatureOfAdditionalOwner: req.body.SignatureOfAdditionalOwner,
+    SignatureOfWitness: req.body.SignatureOfWitness
+
   }).then((dbResponse) => {
     res.json(dbResponse);
   })
