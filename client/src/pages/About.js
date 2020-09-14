@@ -4,6 +4,7 @@ import { Jumbotron, Card, CardDeck } from "react-bootstrap";
 import Footer from "../components/Footer";
 
 
+
 //ABOUT EAST COAT INS/PROJECT GROUP WILL GO HERE
 function About () {
      return(
@@ -25,6 +26,7 @@ function About () {
                 <div><img src="https://bitsrc.imgix.net/3fb49197a90923920dcee2f4f5c36cea2c2a1f73.png" /></div>
                 <div><img src="https://career.guru99.com/wp-content/uploads/2014/07/MySQL.svg_-1280x720.png" /></div>
                 <div><img src="https://miro.medium.com/max/2800/1*3AdbbRN3GoTbz72XqfO96g.png" /></div>
+                <div><img src="https://www.timewax.com/wp-content/uploads/2018/10/Slack-RGB.png" /></div>
                 <div><img src="https://images-na.ssl-images-amazon.com/images/I/61DZY6oW0PL._AC_UL600_SR600,600_.png" /></div>
             </div>
             </div>
@@ -36,12 +38,12 @@ function About () {
         <CardDeck>
             {/* ScottCard */}
         <Card>
-            <Card.Img variant="top" src="client\src\pages\images\scott.jpg" />
+            <Card.Img variant="top" src={require("./images/scott.jpg")} />
             <Card.Body>
             <Card.Title>Scott House</Card.Title>
             <Card.Text>
             Technology, engineering, and coding have always been a hobby and passion of mine. Although I ended up not completing an engineering degree at the University of Michigan, I did enroll in the engineering program at the University of Maine and completed a semester of computer and electrical engineering.
-I recently have been a student in the University of New Hampshire's Full-Stack Coding Program, using my previous C programming experience to help me to be successful with the transition to HTML, Javascript, CSS, as well as Node, Git, React, Mongo/MySQL, and NoSQL.
+            I recently have been a student in the University of New Hampshire's Full-Stack Coding Program, using my previous C programming experience to help me to be successful with the transition to HTML, Javascript, CSS, as well as Node, Git, React, Mongo/MySQL, and NoSQL.
             </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -50,7 +52,7 @@ I recently have been a student in the University of New Hampshire's Full-Stack C
         </Card>
         {/* AngelaCard */}
         <Card>
-            <Card.Img variant="top" src="client\src\pages\images\angela.jpg" />
+            <Card.Img variant="top" src={require("./images/angela.png")}/>
             <Card.Body>
             <Card.Title>Angela Gutierrez</Card.Title>
             <Card.Text>
@@ -63,7 +65,7 @@ I recently have been a student in the University of New Hampshire's Full-Stack C
         </Card>
         {/* ShannonCard */}
         <Card>
-            <Card.Img variant="top" src="client\src\pages\images\shannon.jpg" />
+            <Card.Img variant="top" src={require("./images/shannon.jpg")} />
             <Card.Body>
             <Card.Title>Shannon Trainor</Card.Title>
             <Card.Text>
@@ -78,7 +80,7 @@ I recently have been a student in the University of New Hampshire's Full-Stack C
         </Card>
         {/* DianaCard */}
         <Card>
-            <Card.Img variant="top" src="client\src\pages\images\diana.jpg" />
+            <Card.Img variant="top" src={require("./images/diana.jpg")} />
             <Card.Body>
             <Card.Title>Diana Zsigray</Card.Title>
             <Card.Text>
