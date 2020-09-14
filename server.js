@@ -24,11 +24,11 @@ app.use(passport.session());
 app.use("/api", routes);
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client", "index.html"));
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
 db.sequelize
-  .sync({ force: true })
+  .sync({ force: false })
   .then(() => {
     console.log(`${process.env.DB_NAME} database connected`);
   })
