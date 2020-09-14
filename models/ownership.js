@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    const Beneficiary = sequelize.define("Beneficiary", {
+    const Ownership = sequelize.define("Ownership", {
         policyNumber: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -40,95 +40,47 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             unique: false,
         },
-        primaryBeneficiaryFName: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        primaryBeneficiaryLName: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        PrimaryPercentage: {
+        newOwnersFName: {
             type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-        PAddressOne: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        PAddressTwo: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        PCity: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        PZip: {
+        newOwnersLName: {
             type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-        secondaryBeneficiaryFName: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        secondaryBeneficiaryLName: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        SecondaryPercentage: {
+        dateOfBirth: {
             type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-        SAddress: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        SAddressTwo: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        SCity: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            unique: false,
-        },
-        SZip: {
+        relationshipToInsured: {
             type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-        SignatureOfOwner: {
-            type: DataTypes.STRING,
+        newOwnersAddress: {
+            type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-        SignatureOfAdditionalOwner: {
-            type: DataTypes.STRING,
+        newOwnersAddressTwo: {
+            type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-        SignatureOfWitness: {
-            type: DataTypes.STRING,
+        newOwnersCity: {
+            type: DataTypes.INTEGER,
             allowNull: false,
             unique: false,
         },
-
-
-
-
+        newOwnersZip: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            unique: false,
+        },
     })
-    return Beneficiary;
+    return Ownership;
+
 }

@@ -25,7 +25,7 @@ function App() {
     <Route
       {...rest}
       render={props =>
-        isAuth ? <Component {...props} /> : <Redirect to="/login" />
+        isAuth ? <Component {...props}/> : <Redirect to="/login"/>
       }
     />
   );
@@ -36,22 +36,21 @@ function App() {
         <Route
           exact
           path="/"
-          render={props => <Home {...props} />}
+          render={props => <Home {...props}/>}
         />
-        <Route exact path="/login" render={props => <LoginForm {...props} />} />
-        <Route exact path="/signup" render={props => <Signup {...props} />} />
-        <Route exact path="/customer" component={Customer} />
-        <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
-        <Route exact path="/OwnershipForm" component={OwnershipForm} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Quote" component={Quote} />
-        <Route exact path="/HomeIns" component={HomeIns} />
-        <Route exact path="/AutoIns" component={AutoIns} />
-        <Route exact path="/MotoIns" component={MotoIns} />
-        <Route exact path="/BoatIns" component={BoatIns} />
-        <Route exact path="/LifeIns" component={LifeIns} />
-        <Route exact path="/Faqs" component={Faqs} />
-
+        <Route exact path="/login" render={props => <LoginForm {...props}/>}/>
+        <Route exact path="/signup" render={props => <Signup {...props}/>}/>
+        <Route exact path="/customer" component={Customer}/>
+        <Route exact path="/BeneficiaryForm" component={BeneficiaryForm}/>
+        <Route exact path="/OwnershipForm" component={OwnershipForm}/>
+        <Route exact path="/About" component={About}/>
+        <Route exact path="/Quote" component={Quote}/>
+        <Route exact path="/HomeIns" component={HomeIns}/>
+        <Route exact path="/AutoIns" component={AutoIns}/>
+        <Route exact path="/MotoIns" component={MotoIns}/>
+        <Route exact path="/BoatIns" component={BoatIns}/>
+        <Route exact path="/LifeIns" component={LifeIns}/>
+        <Route exact path="/Faqs" component={Faqs}/>
       </Switch>
     </Router>
   );
@@ -60,7 +59,7 @@ function App() {
 export default () => {
   return (
     <AuthProvider>
-      <App />
+      <App/>
     </AuthProvider>
   );
 };

@@ -10,8 +10,8 @@ function Home(props) {
   const [secret, setSecret] = useState("");
 
   return (
-    <Jumbotron className="LoginJumbotron" fluid >
-      <h1 className="insurance"> Welcome to East Coast Life Insurance </h1>
+    <Jumbotron className="LoginJumbotron" fluid>
+      <h1 className="insurance">Welcome to East Coast Life Insurance</h1>
       <Container className="signup">
         <Row>
           <Col className="intro" md={{ span: 8, offset: 2 }}>
@@ -67,7 +67,7 @@ function Home(props) {
           </Col>
         </Row>
       </Container>
-      <Footer />
+      <Footer/>
     </Jumbotron>
   )
 }

@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
     Axios.get("/api/auth/logout")
       .then(() => {
         setIsAuth(false);
-        return <Redirect to="/" />;
+        return <Redirect to="/"/>;
       })
       .catch((err) => console.log(err));
   };
