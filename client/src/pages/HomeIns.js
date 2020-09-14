@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import { Jumbotron, Container, Col, Row } from 'react-bootstrap';
-// import inspages from "../assets/inspages.css";
 
 function HomeIns() {
   return (

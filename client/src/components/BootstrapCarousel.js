@@ -4,17 +4,17 @@ import Carousel from "react-bootstrap/Carousel";
 export class BootstrapCarousel extends Component {
   render() {
     return (
-      < div >
-        < div className='container-fluid' >
-          < Carousel style={{ padding: 0, margin: '0px auto' }}>
-            < Carousel.Item >
-              < img
+      <div>
+        <div className='container-fluid'>
+          <Carousel style={{ padding: 0, margin: '0px auto' }}>
+            <Carousel.Item>
+              <img
                 className="d-block w-100"
                 src={'../assets/img/family_1920.jpg'}
                 alt={"image of a family"}
               />
               < Carousel.Caption style={{ "text-color": 'black' }}>
-                < h2 > For all the little moments in life, Life Insurance is the key to protect them </h2 >
+                <h2> For all the little moments in life, Life Insurance is the key to protect them </h2 >
               </Carousel.Caption >
             </Carousel.Item >
             < Carousel.Item style={{ height: "600px" }}>
