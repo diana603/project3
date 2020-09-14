@@ -3,7 +3,6 @@ import { Route, Switch, BrowserRouter as Router, Redirect } from "react-router-d
 import { AuthProvider, AuthContext } from "./AuthContext";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginForm from "./pages/Login";
 import Customer from "./pages/Customer";
@@ -16,7 +15,7 @@ import AutoIns from "./pages/AutoIns";
 import BoatIns from "./pages/BoatIns";
 import HomeIns from "./pages/HomeIns";
 import LifeIns from "./pages/LifeIns";
-import Faqs from "./pages/Faqs"
+import Faqs from "./pages/Faqs";
 
 function App() {
   const { isAuth, setIsAuth } = useContext(AuthContext);
@@ -26,7 +25,7 @@ function App() {
     <Route
       {...rest}
       render={props =>
-        isAuth ? <Component {...props} /> : <Redirect to="/login" />
+        isAuth ? <Component {...props}/> : <Redirect to="/login"/>
       }
     />
   );
@@ -37,22 +36,21 @@ function App() {
         <Route
           exact
           path="/"
-          render={props => <Home {...props} />}
+          render={props => <Home {...props}/>}
         />
-        <Route exact path="/login" render={props => <LoginForm {...props} />} />
-        <Route exact path="/signup" render={props => <Signup {...props} />} />
-        <Route exact path="/customer" component={Customer} />
-        <Route exact path="/BeneficiaryForm" component={BeneficiaryForm} />
-        <Route exact path="/OwnershipForm" component={OwnershipForm} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Quote" component={Quote} />
-        <Route exact path="/HomeIns" component={HomeIns} />
-        <Route exact path="/AutoIns" component={AutoIns} />
-        <Route exact path="/MotoIns" component={MotoIns} />
-        <Route exact path="/BoatIns" component={BoatIns} />
-        <Route exact path="/LifeIns" component={LifeIns} />
-        <Route exact path="/Faqs" component={Faqs} />
-
+        <Route exact path="/login" render={props => <LoginForm {...props}/>}/>
+        <Route exact path="/signup" render={props => <Signup {...props}/>}/>
+        <Route exact path="/customer" component={Customer}/>
+        <Route exact path="/BeneficiaryForm" component={BeneficiaryForm}/>
+        <Route exact path="/OwnershipForm" component={OwnershipForm}/>
+        <Route exact path="/About" component={About}/>
+        <Route exact path="/Quote" component={Quote}/>
+        <Route exact path="/HomeIns" component={HomeIns}/>
+        <Route exact path="/AutoIns" component={AutoIns}/>
+        <Route exact path="/MotoIns" component={MotoIns}/>
+        <Route exact path="/BoatIns" component={BoatIns}/>
+        <Route exact path="/LifeIns" component={LifeIns}/>
+        <Route exact path="/Faqs" component={Faqs}/>
       </Switch>
     </Router>
   );
@@ -61,7 +59,7 @@ function App() {
 export default () => {
   return (
     <AuthProvider>
-      <App />
+      <App/>
     </AuthProvider>
   );
 };

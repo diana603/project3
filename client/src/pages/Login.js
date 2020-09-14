@@ -12,11 +12,10 @@ import { Jumbotron } from "react-bootstrap";
 
 function Login(props) {
   const { isAuth } = useContext(AuthContext);
-
   console.log("login auth: ", isAuth);
 
   return isAuth ? (
-    <Redirect to="/" />
+    <Redirect to="/"/>
   ) : (
     <>
       <Nav/>
@@ -24,7 +23,7 @@ function Login(props) {
         <Col md={{ span: 8, offset: 2 }}>
           <br></br>
           <Jumbotron className="LoginPage">Login</Jumbotron>
-          <LoginForm {...props} />
+          <LoginForm {...props}/>
         </Col>
       </Row>
    </>

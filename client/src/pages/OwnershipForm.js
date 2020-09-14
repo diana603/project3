@@ -87,11 +87,11 @@ const OwnerShipForm = () => {
                         <p> East Coast Life Insurance </p>
                         <p> Change of Beneficiary Form </p>
                     </div>
-                    { <Form onSubmit={event => verifyForm(event)}>
-                        <Accordion> }
-                            { <Card>
-                                <Card.Header> }
-                                    {<Accordion.Toggle as={Button} variant="link" eventKey="0">
+                    <Form onSubmit={event => verifyForm(event)}>
+                        <Accordion>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                         Current Policy Owner Information
                                     </Accordion.Toggle>
                                 </Card.Header>
@@ -146,6 +146,10 @@ const OwnerShipForm = () => {
                                                 <Form.Control onChange={e => setZip(e.target.value)} />
                                             </Form.Group>
                                         </Form.Row>
+
+
+
+
 
                                     </Card.Body>
                                 </Accordion.Collapse>
@@ -358,7 +362,7 @@ const OwnerShipForm = () => {
                             <strong className="mr-auto">Bootstrap</strong>
                         </Toast.Header>
                         <Toast.Body>Thank You For Your Submission. Your Request will processed Within 10 to 15 business days. </Toast.Body>
-                    </Toast> */}
+                    </Toast>
                 </Container>
             </>
         )

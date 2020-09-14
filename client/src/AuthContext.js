@@ -3,7 +3,6 @@ import Axios from "axios";
 import { Redirect } from "react-router-dom";
 
 export const AuthContext = React.createContext();
-
 export const AuthProvider = ({ children }) => {
   const [isAuth, setIsAuth] = useState(false);
 
@@ -25,7 +24,7 @@ export const AuthProvider = ({ children }) => {
     Axios.get("/api/auth/logout")
       .then(() => {
         setIsAuth(false);
-        return <Redirect to="/" />;
+        return <Redirect to="/"/>;
       })
       .catch((err) => console.log(err));
   };

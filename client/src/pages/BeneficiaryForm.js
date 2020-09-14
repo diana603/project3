@@ -36,21 +36,19 @@ const BeneficiaryForm = () => {
     const [showToast, setShowToast] = useState(false);
     const [redirect, setRedirect] = useState(false);
 
-
     const handleStateChange = (e) => {
-        console.log(e.target.value)
-        setState(e.target.value)
+        console.log(e.target.value);
+        setState(e.target.value);
     }
 
     const verifyForm = (event) => {
-
         event.preventDefault();
         const form = event.currentTarget;
         console.log(form);
         if (!state || state === "Select State") {
-            alert("Please Enter Address")
+            alert("Please Enter Address");
         } else if (state === "MA") {
-            alert("Please Note in the State of MA your signature must be witnessed by a disinterested third party")
+            alert("Please Note in the State of MA your signature must be witnessed by a disinterested third party");
         }
         else {
             axios.post('/api/beneFormData', {
@@ -78,7 +76,7 @@ const BeneficiaryForm = () => {
                 SZip: SZip,
                 SignatureOfOwner: SignatureOfOwner,
                 SignatureOfAdditionalOwner: SignatureOfAdditionalOwner,
-                SignatureOfWitness: SignatureOfWitness
+                SignatureOfWitness:SignatureOfWitness
 
             })
                 .then(function (response) {

@@ -1,18 +1,11 @@
 .loginInput.form-label {
     font-size: 25px;
     font-family: 'Playfair Display', serif;
-
 }
-
-/* .signup {
-    height: 100vh;
-    background-image: linear-gradient(#000000, #999999);
-} */
 
 .form-control {
     font-size: 15px;
     font-family: 'Playfair Display', serif;
-
 }
 
 .m-1 {
@@ -27,5 +20,5 @@
 .signLink {
     float: right;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 20px;
 }

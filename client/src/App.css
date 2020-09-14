@@ -17,7 +17,6 @@ h1.pageHeader {
   margin: 2px;
   color: aliceblue;
   font-size: 50px;
-  
 }
 
 .insurance {
@@ -47,12 +46,14 @@ footer {
 }
 
 .insurancecard {
-  height: 60vh;
+  /* height: 60vh; */
   background: #007bff4d;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 3em;
+  margin-top: 10em;
 }
 
 .carousel {
@@ -89,6 +90,7 @@ footer {
   color: #007BFF;
   text-decoration: none;
 }
+
 .homeQuote, .boatQuote {
   font-size: 50px;
   font-weight: bold;
@@ -125,5 +127,55 @@ footer {
   padding-top: 20px;
   color: white;
   text-align: center;
+}
 
+
+/* slider */
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: -980px;
+  }
+}
+
+.aboutSlide {
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.aboutContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.aboutContainer div {
+  padding: 20px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+
+div img {
+  height: auto;
+  width: 100%;
+}
+
+/* end slider */
+
+h1 {
+  text-align: center;
+}
+
+p.card-text {
+  font-size: 15px;
 }
