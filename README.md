@@ -1,5 +1,5 @@
 
-#### East Coast Life Insurance ####
+# East Coast Life Insurance ####
 [![GitHub license](https://img.shields.io/badge/license-OTHER-blue.svg)](https://github.com/lalaggv2/east-coast-life-insurance)
 
 ### Description ###
