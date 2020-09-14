@@ -166,7 +166,7 @@ footer {
   width: 150px;
 }
 
-div img {
+.aboutImg {
   height: auto;
   width: 100%;
 }
@@ -200,10 +200,20 @@ p.card-text {
   color: gray;
 }
 
-.card-title.h5 {
+.nameTitle {
   font-family: 'Playfair Display', serif;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+}
 
+.h6 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.card-title.h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  text-align: center;
 }
