@@ -46,3 +46,6 @@ npm run test
 
 ### Questions ###
 
+For questions or additional information contact any of the team members. Thank you!
+
+
