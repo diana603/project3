@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 const Quote = () => (
     <div>
         <Nav/>
-        <br></br>
         <Jumbotron className="JQuote">Insurance Quotes
             <h6>Please Choose An Insurance Type to Be Directed to a Quote</h6>
         </Jumbotron>

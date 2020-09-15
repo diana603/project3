@@ -26,7 +26,7 @@ function Home(props) {
           <CardHome name="Auto" Subtitle="When you want to protect your car" link="/AutoIns"/>
           <CardHome name="Home" Subtitle="When you want to protect your Home" link="/HomeIns"/>
           <CardHome name="Customer Forms" Subtitle="Fill the customer forms" link="./Customer"/>
-          <CardHome name="Insurance" Subtitle="FAQs about Insurance" link="./Faqs"/>
+          <CardHome name="Insurance" Subtitle="FAQs About Insurance" link="./Faqs"/>
         </div>
       </Container>
       <Footer/>

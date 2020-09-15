@@ -12,7 +12,7 @@ function Faqs() {
       </Jumbotron>
       <Container className="inspages">
         <Row style={{ display: "inline" }}>
-          <h2>What is insurance?</h2>
+          <h2>What Is Insurance?</h2>
           <img
             style={{ height: "425px", float: "right", margin: "1em" }}
             src={'../assets/img/woman_1920.jpg'}

@@ -14,7 +14,7 @@ export class BootstrapCarousel extends Component {
                 alt={"image of a family"}
               />
               < Carousel.Caption style={{ "text-color": 'black' }}>
-                <h2> For all the little moments in life, Life Insurance is the key to protect them </h2 >
+                <h2> For all the little moments in life, Life Insurance is the key to protecting your family </h2 >
               </Carousel.Caption >
             </Carousel.Item >
             < Carousel.Item style={{ height: "600px" }}>
@@ -47,7 +47,7 @@ export class BootstrapCarousel extends Component {
                 alt={"family on top of a mountain"}
               />
               < Carousel.Caption >
-                < h2 style={{ textDecorationColor: "forestgreen" }} > From the heights to the lows, be reassured that East Coast is with you</h2 >
+                < h2 style={{ textDecorationColor: "forestgreen" }} > From the highs to the lows, be reassured that East Coast is with you</h2 >
               </Carousel.Caption >
             </Carousel.Item >
             < Carousel.Item style={{ 'height': "600px" }}>
@@ -69,7 +69,7 @@ export class BootstrapCarousel extends Component {
                 alt={"kids jumping on the sunset at the beach"}
               />
               < Carousel.Caption >
-                < h2 > On the sunset of your life think about leaving a better future for them</h2 >
+                < h2 > On the sunset of your life think about leaving a better future for your loved ones</h2 >
               </Carousel.Caption >
             </Carousel.Item >
           </Carousel >

@@ -5,7 +5,7 @@ const db = require("../models");
 passport.use(
   new LocalStrategy(
     {
-      usernameField: "email",
+      usernameField: "email", 
     },
     (email, password, done) => {
       db.User.findOne({
@@ -30,7 +30,7 @@ passport.use(
 );
 
 passport.serializeUser((user, cb) => {
-  cb(null, user);
+  cb(null, user);  
 });
 
 passport.deserializeUser((obj, cb) => {

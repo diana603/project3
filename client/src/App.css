@@ -108,7 +108,7 @@ footer {
 
 .JQuote.jumbotron {
   background-color: #007BFF;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
   padding: inherit;
@@ -173,10 +173,37 @@ div img {
 
 /* end slider */
 
-h1 {
+.aboutHeader, .teamHeader {
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #007BFF;
+}
+
+.aboutHeader {
+  margin-top: 4%;
+}
+
+.teamHeader {
+  margin-top: 6%;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 p.card-text {
   font-size: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.linkedin {
+  float: right;
+  color: gray;
+}
+
+.card-title.h5 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+
 }
